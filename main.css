@@ -1,0 +1,428 @@
+#siteSub {
+	display: none;
+}
+#site-tools li#pt-mytalk,
+#site-tools li#pt-preferences,
+#site-tools li#pt-watchlist,
+#site-tools li#pt-mycontris,
+#site-tools li#pt-logout {
+	display: none;
+}
+#page-tools li[id^=ca-nstab],
+#page-tools li#ca-talk,
+#page-tools li#ca-protect,
+#page-tools li#ca-watch {
+	display: none;
+}
+#nav-container h3 {
+	display: none;
+}
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+
+body.skin-mask {
+	direction: ltr;
+	margin: 0;
+	padding: 0;
+	font-family: 'Linux Biolinum', sans-serif;
+	font-size: 1em;
+	/* @embed */
+	background: #000 url('glass_from_dragoroth-stock.dA.png') no-repeat 50% 0;
+}
+#top-container {
+	height: 350px;
+	/* @embed */
+	background: url('masktop-cropped.png') no-repeat 50% 0;
+	margin-bottom: -205px;
+	position: relative;
+	z-index: 2;
+}
+#nav-container {
+	position: relative;
+	width: 850px;
+	height: 200px;
+	margin: auto;
+}
+
+#nav-container div.portlet {
+	/* To reduce jumpiness as bits load */
+	position: absolute;
+}
+#p-navigation,
+#p-Wiki {
+	color: #aaa;
+	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
+	position: absolute;
+	top: 75px;
+}
+#p-navigation ul,
+#p-Wiki ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#p-navigation a,
+#p-Wiki a {
+	color: #aaa;
+}
+#p-Wiki {
+	text-align: right;
+	right: 640px;
+}
+#p-navigation {
+	text-align: left;
+	left: 640px;
+}
+#top-coin a {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 0px;
+	left: 365px;
+	/* @embed */
+	background-image: url('skull-coin.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#content-container {
+	width: 850px;
+	box-sizing: border-box;
+	/* @embed */
+	background: #f4f0e6 url('paper-repeater.gif');
+	margin: auto;
+	border: 1px #000;
+	border-style: none solid;
+	position: relative;
+	z-index: 5;
+	box-shadow: 0 3px 10px 0px #000;
+}
+#content {
+	padding: 4em 3em 3em;
+	text-align: justify;
+	min-height: 400px;
+	position: relative;
+	z-index: 6;
+}
+#paper-top {
+	height: 521px;
+	/* @embed */
+	background: url('paper-top.gif') no-repeat 0 0;
+	margin-bottom: -521px;
+}
+#paper-bottom {
+	height: 268px;
+	/* @embed */
+	background: url('paper-bottom.gif') no-repeat 0 0;
+	margin-top: -268px;
+	position: relative;
+	z-index: 5;
+}
+#border-top {
+	height: 82px;
+	/* @embed */
+	background: url('border-top.png') no-repeat 0 0;
+	margin-bottom: -82px;
+}
+#border-bottom {
+	height: 7px;
+	/* @embed */
+	background: url('border-bottom.png') no-repeat 0 0;
+	margin-top: -7px;
+	position: relative;
+	z-index: 7;
+}
+#bottom-container {
+	height: 440px;
+	/* @embed */
+	background: url('maskbottom-cropped.png') no-repeat 50%;
+	margin-top: -323px;
+	position: relative;
+	z-index: 1;
+}
+#bottom-nav-container {
+	position: relative;
+	width: 850px;
+	height: 440px;
+	margin: auto;
+}
+#bottom-coin a {
+	width: 50px;
+	height: 50px;
+	/* @embed */
+	background: url('daji-coin.png');
+	position: absolute;
+	bottom: 55px;
+	left: 400px;
+}
+#tools-bottom {
+	margin: 1em 3em 2em;
+	font-size: 80%;
+	color: #555;
+	position: relative;
+	z-index: 7;
+}
+#tools-bottom a {
+	color: #555;
+}
+#page-title {
+	color: #222;
+}
+#page-tools {
+}
+#site-tools {
+	float: right;
+}
+#p-personal,
+#p-personal .pBody,
+#p-cactions,
+#p-cactions .pBody {
+	display: inline;
+}
+#p-personal {
+	float: left;
+}
+#page-tools ul,
+#site-tools ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+#page-tools li,
+#site-tools li {
+	display: inline;
+	margin: 0 .5em;
+}
+#p-search {
+	float: right;
+	margin-left: 1.5em;
+}
+#p-search input {
+	font-family: 'Linux Biolinum', sans-serif;
+	border-width: 0;
+	background: transparent;
+	color: #666;
+}
+#p-search .placeholder {
+	color: #666;
+}
+#p-search input#searchGoButton {
+	color: #888;
+}
+
+h1, h2 {
+	font-family: 'Linux Libertine Display', serif;
+}
+h1, h2, h3 {
+	color: #400;
+	font-weight: normal;
+	text-align: center;
+}
+h2, h3 {
+	padding-right: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #004d8f;
+}
+a:visited {
+	color: #00328f;
+}
+a.new {
+	color: #600;
+}
+a.new:visited {
+	color: #620;
+}
+a:hover {
+	color: #555;
+}
+
+.mw-editsection-bracket {
+	display: none;
+}
+.mw-editsection a {
+	color: #777;
+}
+
+.mw-newarticletext,
+.editButtons .cancelLink,
+.editButtons .editHelp,
+#wpWatchthis,
+#mw-editpage-watch,
+#editpage-copywarn {
+	display: none;
+}
+form#editform .editOptions {
+	background: transparent;
+	border-style: none;
+	padding: 1em 0 0;
+}
+#wpSummaryLabel {
+	display: block;
+	float: left;
+	margin-right: .5em;
+}
+.limitreport,
+.hiddencats,
+.templatesUsed,
+#mw-editpage-minoredit {
+	font-size: 90%;
+}
+#mw-previewheader {
+	text-align: left;
+}
+.previewnote {
+	color: #444;
+}
+.previewnote p {
+	text-indent: 0;
+	font-size: 90%;
+}
+.previewnote p a {
+	display: none;
+}
+#editform textarea,
+textarea#wpUploadDescription {
+	width: 100%;
+	box-sizing: border-box;
+	padding: .3em;
+	resize: vertical;
+	border: none;
+	box-shadow: 0 2px 7px inset #bab1a8;
+}
+#editform #wpSummary,
+#wpDestFile,
+#wpReason,
+input[type=text] {
+	border: none;
+	box-shadow: 0 1px 4px inset #bab1a8;
+	padding: .25em;
+	color: #555;
+	font-family: 'Linux Biolinum', sans-serif;
+	font-size: 85%;
+}
+select,
+input[type=submit] {
+	font-family: 'Linux Biolinum', sans-serif;
+	font-size: 90%;
+	padding: .1em 1em .25em;
+}
+
+
+fieldset {
+	border: solid 1px #ccc;
+	border-width: 1px 0 0;
+	margin-bottom: 1em;
+}
+legend {
+	color: #882233;
+	font-size: 105%;
+	padding: 0 .5em;
+}
+
+.htmlform-tip {
+	font-size: 90%;
+	color: #666;
+	padding: 1em 0;
+}
+#preftoc {
+	list-style: none;
+}
+#preftoc li {
+	display: inline;
+	margin: 0 .5em;
+}
+#preftoc li.selected a {
+	color: #000;
+}
+
+hr {
+	/* @embed */
+	background: url('hr.png') no-repeat -150px 100%;
+	border: none;
+	height: 1px;
+	padding: 0;
+	margin: .5em 0;
+	display: list-item !ie;
+	list-style: url(http://c.zaori.org/skins/splash/hr.png) inside !ie;
+	filter: alpha(opacity=0) !ie;
+	width: 0 !ie;
+}
+
+td.diff-deletedline {
+	background: #dcffde;
+	border-color: #7cd282;
+}
+td.diff-addedline {
+	background: #dce6ff;
+	border-color: #96add5;
+}
+td.diff-context {
+	background: rgba(90,90,90,.1)
+	border-color: #rgba(90,90,90,.3)
+}
+td.diff-context div {
+	font-style: italic;
+	color: #555;;
+}
+td.diff-addedline div,
+td.diff-deletedline div,
+td.diff-context div {
+	padding: 2px 4px 1px 6px;
+}
+td.diff-addedline .diffchange,
+td.diff-deletedline .diffchange {
+	background: transparent;
+	padding-bottom: 1px;
+	color: #c00;
+}
+td.diff-addedline .diffchange {
+	background: url('squiggle-blue.png') repeat-x bottom;
+}
+td.diff-deletedline .diffchange {
+	background: url('squiggle-green.png')  repeat-x bottom;
+}
+table.diff td {
+	padding: .2em .3em .1em;
+}
+td.diff-marker {
+	font-size: 1em;
+}
+
+table {
+	text-align: left;
+}
+table.diff,
+table {
+	background: transparent;
+}
+.action-delete #bodyContent,
+.action-history #bodyContent,
+.ns-special #bodyContent {
+	font-size: 90%;
+}
+
+ul#pagehistory li {
+	border-color: rgba(0,0,0,0);
+}
+
+#contentSub {
+	margin: -3.25em 14em 3.25em;
+	font-size: 80%;
+}
+#contentSub a {
+	color: #666;
+}
+
+pre,
+.mw-code {
+	line-height: 1.1em;
+	font-size: 12px;
+	word-wrap: break-word;
+}
