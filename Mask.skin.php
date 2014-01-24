@@ -254,5 +254,3 @@ class MaskTemplate extends BaseTemplate {
 <?php
 	}
 } // end of class
-
-
