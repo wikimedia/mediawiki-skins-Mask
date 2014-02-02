@@ -60,20 +60,31 @@ class MaskTemplate extends BaseTemplate {
 		wfSuppressWarnings();
 
 		$this->html( 'headelement' );
-		?><div id="globalWrapper">
+	?><div id="globalWrapper">
 		<div id="top-container">
 			<div id="nav-container">
 				<div id="top-coin" class="portlet" role="banner">
 					<?php
-					echo Html::element( 'a', array(
-					'href' => $this->data['nav_urls']['mainpage']['href'],
-					'style' => "background-image: url({$this->data['logopath']});" )
-					+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) );
+					echo Html::element(
+						'a',
+						array(
+							'href' => $this->data['nav_urls']['mainpage']['href'],
+							'style' => "background-image:  url(" . $this->getLogoURL() . ");"
+						)
+						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
+					);
 					?>
 				</div>
-			<?php
-			$this->renderPortals( $this->data['sidebar'] );
-			?>
+				<div id="menu-left">
+				<?php
+					$this->renderNavigation( 'mask-menu-left', 'menu-left' );
+				?>
+				</div>
+				<div id="menu-right">
+				<?php
+					$this->renderNavigation( 'mask-menu-right', 'menu-right' );
+				?>
+				</div>
 			</div>
 		</div>
 	<div id="content-container">
@@ -147,10 +158,18 @@ class MaskTemplate extends BaseTemplate {
 				echo Html::element( 'a', array('href' => $url ) );
 				?>
 			</div>
+			<?php
+			# Only show this if it's not the default skin for testing reasons
+			if ( $wgDefaultSkin != "mask" ) { ?>
+			<div id="bottom-nav">
+				<?php
+				$this->renderPortals( $this->data['sidebar'] );
+				?>
+			</div>
+			<?php } ?>
 		</div>
 	</div>
 	<div class="visualClear"></div>
-
 </div>
 <?php
 		$this->printTrail();
@@ -160,6 +179,73 @@ class MaskTemplate extends BaseTemplate {
 	} // end of execute() method
 
 	/*************************************************************************************************/
+
+	/**
+	 * Print arbitrary block of navigation
+	 * @param $linksMessage
+	 * @param $blockId
+	 * Message parsing is limited to first 4 lines only for this skin.
+	 */
+	private function renderNavigation( $linksMessage, $blockId ) {
+		$message = trim(  wfMessage( $linksMessage )->text() );
+		$lines = array_slice( explode( "\n", $message ), 0, 4 );
+		$links = array();
+		foreach ( $lines as $line ) {
+			# ignore empty lines
+			if ( strlen( $line ) == 0 ) {
+				continue;
+			}
+			$links[] = $this->parseItem( $line );
+		}
+
+		$this->customBox( $blockId, $links );
+	}
+
+	/**
+	 * Extract the link text and destination (href) from a MediaWiki message
+	 * and return them as an array.
+	 */
+	private function parseItem( $line ) {
+		$line_temp = explode( '|', trim( $line, '* ' ), 2 );
+		if ( count( $line_temp ) > 1 ) {
+			$line = $line_temp[1];
+			$link = wfMessage( $line_temp[0] )->inContentLanguage()->text();
+		} else {
+			$line = $line_temp[0];
+			$link = $line_temp[0];
+		}
+
+		// Determine what to show as the human-readable link description
+		if ( wfMessage( $line )->isDisabled() ) {
+			// It's *not* the name of a MediaWiki message, so display it as-is
+			$text = $line;
+		} else {
+			// Guess what -- it /is/ a MediaWiki message!
+			$text = wfMessage( $line )->text();
+		}
+
+		if ( $link != null ) {
+			if ( wfMessage( $line_temp[0] )->isDisabled() ) {
+				$link = $line_temp[0];
+			}
+			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
+				$href = $link;
+			} else {
+				$title = Title::newFromText( $link );
+				if ( $title ) {
+					$title = $title->fixSpecialName();
+					$href = $title->getLocalURL();
+				} else {
+					$href = '#';
+				}
+			}
+		}
+
+		return array(
+			'text' => $text,
+			'href' => $href
+		);
+	}
 
 	/**
 	 * @param $sidebar array
@@ -175,49 +261,50 @@ class MaskTemplate extends BaseTemplate {
 	}
 
 	function searchBox() {
-?>
-	<div id="p-search" class="portlet" role="search">
-		<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
-		<div id="simpleSearch">
-			<?php echo $this->makeSearchInput( array( 'id' => 'searchInput', 'type' => 'text' ) ); ?>
-			<?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?>
-			<?php # echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) ); ?>
-			<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
+	?>
+		<div id="p-search" class="portlet" role="search">
+			<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
+			<div id="simpleSearch">
+				<?php echo $this->makeSearchInput( array( 'id' => 'searchInput', 'type' => 'text' ) ); ?>
+				<?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?>
+				<?php # echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) ); ?>
+				<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
+			</div>
+		</form>
 		</div>
-	</form>
-	</div>
-<?php
+	<?php
 	}
 
 	/**
 	 * Prints the cactions bar.
-	 * Shared between Mask and Modern
+	 * Shared between Monobook and Modern and stolen for mask
 	 */
 	function cactions() {
-?>
-	<div id="p-cactions" class="portlet" role="navigation">
-		<div class="pBody">
-			<ul><?php
-				foreach ( $this->data['content_actions'] as $key => $tab ) {
-					echo '
-				' . $this->makeListItem( $key, $tab );
-				}
+	?>
+		<div id="p-cactions" class="portlet" role="navigation">
+			<div class="pBody">
+				<ul>
+				<?php
+					foreach ( $this->data['content_actions'] as $key => $tab ) {
+						echo '
+					' . $this->makeListItem( $key, $tab );
+					}
 
-				// what links here
-				if ( $this->getSkin()->getOutput()->isArticleRelated() ) {
-					$title = SpecialPage::getTitleFor( 'Whatlinkshere', $this->getSkin()->getTitle() );
-					$link = Linker::link( $title, wfMessage( 'whatlinkshere-short' )->text() ); ?>
-					<li id="ca-links"><?php echo $link; ?></li>
-					<?php
-				}
-				// purge
-				$title = $this->getSkin()->getTitle();
-				$link = Linker::link( $title, wfMessage( 'refresh' )->text(), array(), array( 'action' => 'purge' ) ); ?>
-				<li id="ca-purge"><?php echo $link; ?></li>
-			</ul>
+					// what links here
+					if ( $this->getSkin()->getOutput()->isArticleRelated() ) {
+						$title = SpecialPage::getTitleFor( 'Whatlinkshere', $this->getSkin()->getTitle() );
+						$link = Linker::link( $title, wfMessage( 'whatlinkshere-short' )->text() ); ?>
+						<li id="ca-links"><?php echo $link; ?></li>
+						<?php
+					}
+					// purge
+					$title = $this->getSkin()->getTitle();
+					$link = Linker::link( $title, wfMessage( 'refresh' )->text(), array(), array( 'action' => 'purge' ) ); ?>
+					<li id="ca-purge"><?php echo $link; ?></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-<?php
+	<?php
 	}
 
 	/*************************************************************************************************/
@@ -233,24 +320,50 @@ class MaskTemplate extends BaseTemplate {
 		}
 		echo '	' . Html::openElement( 'div', $portletAttribs );
 		$msgObj = wfMessage( $bar );
-?>
+	?>
 
 		<h3><?php echo htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar ); ?></h3>
 		<div class='pBody'>
-<?php   if ( is_array( $cont ) ) { ?>
+			<?php   if ( is_array( $cont ) ) { ?>
 			<ul>
-<?php 			foreach ( $cont as $key => $val ) { ?>
-				<?php echo $this->makeListItem( $key, $val ); ?>
-
-<?php			} ?>
+			<?php
+				foreach ( $cont as $key => $val ) {
+					echo $this->makeListItem( $key, $val );
+				}
+			?>
 			</ul>
-<?php   } else {
+			<?php
+		} else {
 			# allow raw HTML block to be defined by extensions
 			print $cont;
 		}
-?>
+		?>
 		</div>
 	</div>
-<?php
+	<?php
+	}
+
+	/*************************************************************************************************/
+	/**
+	* Get URL to the logo image, either a custom one
+	* ([[File:Aurora-skin-logo.png]]) or a "sane default" if a custom logo
+	* doesn't exist.
+	*
+	* @return String: logo image URL
+	*/
+	function getLogoURL() {
+		global $wgStylePath;
+
+		$s = '';
+		// If there is a custom logo, display it; otherwise show the skin's
+		// default logo image
+		$logo = wfFindFile( 'Mask_skin_coin.png' );
+		if ( is_object( $logo ) ) {
+			$s .= $logo->getUrl();
+		} else {
+			$s .= $wgStylePath . '/mask/images/skull-coin.png';
+		}
+
+		return $s;
 	}
 } // end of class

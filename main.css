@@ -29,13 +29,11 @@ body.skin-mask {
 	padding: 0;
 	font-family: 'Linux Biolinum', sans-serif;
 	font-size: 1em;
-	/* @embed */
-	background: #000 url('glass_from_dragoroth-stock.dA.png') no-repeat 50% 0;
+	background: #000 url('images/glass_from_dragoroth-stock.dA.png') no-repeat 50% 0;
 }
 #top-container {
 	height: 350px;
-	/* @embed */
-	background: url('masktop-cropped.png') no-repeat 50% 0;
+	background: url('images/masktop-cropped.png') no-repeat 50% 0;
 	margin-bottom: -205px;
 	position: relative;
 	z-index: 2;
@@ -43,36 +41,34 @@ body.skin-mask {
 #nav-container {
 	position: relative;
 	width: 850px;
-	height: 200px;
+	height: 145px;
 	margin: auto;
+	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
 }
 
 #nav-container div.portlet {
-	/* To reduce jumpiness as bits load */
-	position: absolute;
+	/* To reduce jumpiness as bits load
+	position: absolute;*/
 }
-#p-navigation,
-#p-Wiki {
-	color: #aaa;
-	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
-	position: absolute;
-	top: 75px;
+#menu-left, #menu-right {
+	position:absolute;
+	bottom: 33px;
 }
-#p-navigation ul,
-#p-Wiki ul {
+#menu-left ul,
+#menu-right ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#p-navigation a,
-#p-Wiki a {
+#menu-left a,
+#menu-right a {
 	color: #aaa;
 }
-#p-Wiki {
+#menu-left {
 	text-align: right;
 	right: 640px;
 }
-#p-navigation {
+#menu-right {
 	text-align: left;
 	left: 640px;
 }
@@ -82,17 +78,15 @@ body.skin-mask {
 	position: absolute;
 	top: 0px;
 	left: 365px;
-	/* @embed */
-	background-image: url('skull-coin.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
 
+
 #content-container {
 	width: 850px;
 	box-sizing: border-box;
-	/* @embed */
-	background: #f4f0e6 url('paper-repeater.gif');
+	background: #f4f0e6 url('images/paper-repeater.gif');
 	margin: auto;
 	border: 1px #000;
 	border-style: none solid;
@@ -109,14 +103,12 @@ body.skin-mask {
 }
 #paper-top {
 	height: 521px;
-	/* @embed */
-	background: url('paper-top.gif') no-repeat 0 0;
+	background: url('images/paper-top.gif') no-repeat 0 0;
 	margin-bottom: -521px;
 }
 #paper-bottom {
 	height: 268px;
-	/* @embed */
-	background: url('paper-bottom.gif') no-repeat 0 0;
+	background: url('images/paper-bottom.gif') no-repeat 0 0;
 	margin-top: -268px;
 	position: relative;
 	z-index: 5;
@@ -124,21 +116,20 @@ body.skin-mask {
 #border-top {
 	height: 82px;
 	/* @embed */
-	background: url('border-top.png') no-repeat 0 0;
+	background: url('images/border-top.png') no-repeat 0 0;
 	margin-bottom: -82px;
 }
 #border-bottom {
 	height: 7px;
 	/* @embed */
-	background: url('border-bottom.png') no-repeat 0 0;
+	background: url('images/border-bottom.png') no-repeat 0 0;
 	margin-top: -7px;
 	position: relative;
 	z-index: 7;
 }
 #bottom-container {
 	height: 440px;
-	/* @embed */
-	background: url('maskbottom-cropped.png') no-repeat 50%;
+	background: url('images/maskbottom-cropped.png') no-repeat 50%;
 	margin-top: -323px;
 	position: relative;
 	z-index: 1;
@@ -153,11 +144,56 @@ body.skin-mask {
 	width: 50px;
 	height: 50px;
 	/* @embed */
-	background: url('daji-coin.png');
+	background: url('images/daji-coin.png');
 	position: absolute;
-	bottom: 55px;
+	top: 335px;
 	left: 400px;
 }
+#bottom-nav #p-SEARCH,
+#bottom-nav #p-TOOLBOX,
+#bottom-nav #p-LANGUAGES {
+	display:none;
+}
+
+#bottom-nav {
+	position: absolute;
+	top: 420px;
+	font-size: 75%;
+	width: 850px;
+	padding-bottom: 2em;
+	margin: 2em 3.3em 0;
+	text-shadow: 0 2px 4px #000, 0 2px 4px #000, 0 1px 4px #000;
+}
+#bottom-nav .portlet {
+	margin: .5em 0 0;
+}
+#bottom-nav h3 {
+	color: #444;
+	text-align: left;
+	display: inline;
+}
+#bottom-nav h3:after {
+	content: ':';
+}
+
+#bottom-nav .pBody {
+	display: inline;
+}
+#bottom-nav a {
+	color: #666;
+}
+#bottom-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+
+#bottom-nav ul li {
+	margin: 0 .5em;
+	display: inline;
+}
+
 #tools-bottom {
 	margin: 1em 3em 2em;
 	font-size: 80%;
@@ -213,6 +249,25 @@ body.skin-mask {
 #p-search input#searchGoButton {
 	color: #888;
 }
+/*
+ * Leaving this here as a reminder why some people must be killed.
+ * With cheese.
+ * Because form elements CANNOT BE LINED UP.
+
+#pt-login,
+#pt-userpage,
+#simpleSearch input {
+	border: solid 5px #000;
+	margin: 0 1em 0 0;
+	display: block;
+	float: right;
+
+	font-size: 12.8px;
+	line-height: 1em;
+	padding: 5px 0 0 0;
+	box-sizing: border-box;
+}
+*/
 
 h1, h2 {
 	font-family: 'Linux Libertine Display', serif;
@@ -351,7 +406,7 @@ legend {
 
 hr {
 	/* @embed */
-	background: url('hr.png') no-repeat -150px 100%;
+	background: url('images/hr.png') no-repeat -150px 100%;
 	border: none;
 	height: 1px;
 	padding: 0;
@@ -390,10 +445,12 @@ td.diff-deletedline .diffchange {
 	color: #c00;
 }
 td.diff-addedline .diffchange {
-	background: url('squiggle-blue.png') repeat-x bottom;
+	/* @embed */
+	background: url('images/squiggle-blue.png') repeat-x bottom;
 }
 td.diff-deletedline .diffchange {
-	background: url('squiggle-green.png')  repeat-x bottom;
+	/* @embed */
+	background: url('images/squiggle-green.png')  repeat-x bottom;
 }
 table.diff td {
 	padding: .2em .3em .1em;

@@ -33,7 +33,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Mask',
-	'version' => '0.5',
+	'version' => '0.6.0',
 	'author' => array( 'Calimonius the Estrange', 'Jack Phoenix' ),
 	'descriptionmsg' => 'mask-desc',
 );
