@@ -33,9 +33,10 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Mask',
-	'version' => '0.6.0',
+	'version' => '0.6.1',
 	'author' => array( 'Calimonius the Estrange', 'Jack Phoenix' ),
 	'descriptionmsg' => 'mask-desc',
+	'url' => 'https://github.com/zaori/mw-skin-mask',
 );
 
 $skinID = basename( dirname( __FILE__ ) );
