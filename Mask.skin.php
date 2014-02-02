@@ -54,7 +54,7 @@ class MaskTemplate extends BaseTemplate {
 	 * @access private
 	 */
 	function execute() {
-		global $wgHostLink;
+		global $wgHostLink, $wgDefaultSkin;
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();

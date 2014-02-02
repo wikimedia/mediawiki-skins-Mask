@@ -46,10 +46,6 @@ body.skin-mask {
 	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
 }
 
-#nav-container div.portlet {
-	/* To reduce jumpiness as bits load
-	position: absolute;*/
-}
 #menu-left, #menu-right {
 	position:absolute;
 	bottom: 33px;
