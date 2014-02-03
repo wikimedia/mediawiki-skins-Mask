@@ -32,7 +32,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
-	'name' => 'Mask',
+	'name' => 'Mask skin',
 	'version' => '0.6.1',
 	'author' => array( 'Calimonius the Estrange', 'Jack Phoenix' ),
 	'descriptionmsg' => 'mask-desc',
@@ -52,3 +52,8 @@ $wgValidSkinNames[strtolower( $skinID )] = 'Mask';
 
 $wgAutoloadClasses['SkinMask'] = $dir . 'Mask.skin.php';
 $wgExtensionMessagesFiles['SkinMask'] = $dir . 'Mask.i18n.php';
+$wgResourceModules['skins.mask'] = array(
+	'styles' => array(
+		'skins/mask/main.css' => array( 'media' => 'screen' )
+	)
+);

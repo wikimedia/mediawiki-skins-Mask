@@ -35,7 +35,8 @@ class SkinMask extends SkinTemplate {
 			$out->addStyle( $wgFontCSSLocation, 'screen' );
 		}
 		# Add css
-		$out->addStyle( 'mask/main.css', 'screen' );
+		$out->addModuleStyles( 'skins.common.normalize' );
+		$out->addModuleStyles( 'skins.mask' );
 	}
 }
 
@@ -54,7 +55,7 @@ class MaskTemplate extends BaseTemplate {
 	 * @access private
 	 */
 	function execute() {
-		global $wgHostLink, $wgDefaultSkin;
+		global $wgHostLink;
 
 		// Suppress warnings to prevent notices about missing indexes in $this->data
 		wfSuppressWarnings();
@@ -251,11 +252,15 @@ class MaskTemplate extends BaseTemplate {
 	 * @param $sidebar array
 	 */
 	protected function renderPortals( $sidebar ) {
+		$sidebar['SEARCH'] = false;
+		$sidebar['TOOLBOX'] = false;
+		$sidebar['LANGUAGES'] = false;
 
 		foreach ( $sidebar as $boxName => $content ) {
 			if ( $content === false ) {
 				continue;
 			}
+
 			$this->customBox( $boxName, $content );
 		}
 	}

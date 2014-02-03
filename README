@@ -25,4 +25,3 @@ $wgMaskSkinHostLink - set to a url to change bottom coin link target (defaults t
 Notes:
 
 Note that the sidebar is shown at the bottom if mask is not the default skin (ignored otherwise)
-The search thing cannot be fixed (sanely)

@@ -46,6 +46,10 @@ body.skin-mask {
 	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
 }
 
+#nav-container div.portlet {
+	/* To reduce jumpiness as bits load
+	position: absolute;*/
+}
 #menu-left, #menu-right {
 	position:absolute;
 	bottom: 33px;
@@ -145,11 +149,6 @@ body.skin-mask {
 	top: 335px;
 	left: 400px;
 }
-#bottom-nav #p-SEARCH,
-#bottom-nav #p-TOOLBOX,
-#bottom-nav #p-LANGUAGES {
-	display:none;
-}
 
 #bottom-nav {
 	position: absolute;
@@ -232,6 +231,7 @@ body.skin-mask {
 #p-search {
 	float: right;
 	margin-left: 1.5em;
+	margin-top: -1px;
 }
 #p-search input {
 	font-family: 'Linux Biolinum', sans-serif;
@@ -239,31 +239,15 @@ body.skin-mask {
 	background: transparent;
 	color: #666;
 }
+#searchInput {
+	width: 11em;
+}
 #p-search .placeholder {
 	color: #666;
 }
 #p-search input#searchGoButton {
 	color: #888;
 }
-/*
- * Leaving this here as a reminder why some people must be killed.
- * With cheese.
- * Because form elements CANNOT BE LINED UP.
-
-#pt-login,
-#pt-userpage,
-#simpleSearch input {
-	border: solid 5px #000;
-	margin: 0 1em 0 0;
-	display: block;
-	float: right;
-
-	font-size: 12.8px;
-	line-height: 1em;
-	padding: 5px 0 0 0;
-	box-sizing: border-box;
-}
-*/
 
 h1, h2 {
 	font-family: 'Linux Libertine Display', serif;
