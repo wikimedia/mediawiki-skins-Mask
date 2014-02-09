@@ -95,22 +95,41 @@ class MaskTemplate extends BaseTemplate {
 		</div>
 		<div id="content" class="mw-body-primary" role="main">
 			<a id="top"></a>
-			<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
+			<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice">
+				<?php $this->html( 'sitenotice' ) ?>
+			</div><?php } ?>
 
 			<div id="bodyContent" class="mw-body">
-				<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
-				<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
-				<?php if ( $this->data['undelete'] ) { ?>
-					<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
-				<?php } ?><?php if ( $this->data['newtalk'] ) { ?>
-					<div class="usermessage"><?php $this->html( 'newtalk' ) ?></div>
+				<div id="siteSub">
+					<?php $this->msg( 'tagline' ) ?>
+				</div>
+				<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>>
+					<?php $this->html( 'subtitle' ) ?>
+				</div>
+				<?php
+				if ( $this->data['undelete'] ) { ?>
+					<div id="contentSub2">
+						<?php $this->html( 'undelete' ) ?>
+					</div>
+					<?php
+				}
+				if ( $this->data['newtalk'] ) { ?>
+					<div class="usermessage">
+						<?php $this->html( 'newtalk' ) ?>
+					</div>
 				<?php } ?>
-				<div id="jump-to-nav" class="mw-jump"><?php $this->msg( 'jumpto' ) ?> <a href="#nav-container"><?php $this->msg( 'jumptonavigation' ) ?></a><?php $this->msg( 'comma-separator' ) ?><a href="#searchInput"><?php $this->msg( 'jumptosearch' ) ?></a></div>
+				<div id="jump-to-nav" class="mw-jump">
+					<?php $this->msg( 'jumpto' ) ?>
+					<a href="#nav-container"><?php $this->msg( 'jumptonavigation' ) ?></a>
+					<?php $this->msg( 'comma-separator' ) ?>
+					<a href="#searchInput"><?php $this->msg( 'jumptosearch' ) ?></a>
+				</div>
 
-			<!-- start content -->
+				<!-- start content -->
 				<?php $this->html( 'bodytext' ) ?>
 				<?php if ( $this->data['catlinks'] ) { $this->html( 'catlinks' ); } ?>
-			<!-- end content -->
+				<!-- end content -->
+
 				<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
 				<div class="visualClear"></div>
 			</div>
@@ -121,9 +140,11 @@ class MaskTemplate extends BaseTemplate {
 				<div class="portlet" id="p-personal" role="navigation">
 					<div class="pBody">
 						<ul<?php $this->html( 'userlangattributes' ) ?>>
-							<?php foreach ( $this->getPersonalTools() as $key => $item ) { ?>
-								<?php echo $this->makeListItem( $key, $item ); ?>
-							<?php } ?>
+							<?php
+							foreach ( $this->getPersonalTools() as $key => $item ) {
+								echo $this->makeListItem( $key, $item );
+							}
+							?>
 						</ul>
 					</div>
 				</div>
@@ -267,8 +288,9 @@ class MaskTemplate extends BaseTemplate {
 			<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 			<div id="simpleSearch">
 				<?php echo $this->makeSearchInput( array( 'id' => 'searchInput', 'type' => 'text' ) ); ?>
-				<?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) ); ?>
-				<?php # echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) ); ?>
+				<?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) );
+				# echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) );
+				?>
 				<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 			</div>
 		</form>
