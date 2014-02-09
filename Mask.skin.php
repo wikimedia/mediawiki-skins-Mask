@@ -159,7 +159,6 @@ class MaskTemplate extends BaseTemplate {
 				echo Html::element( 'a', array('href' => $url ) );
 				?>
 			</div>
-			<?php
 			<div id="bottom-nav">
 				<?php
 				$this->renderPortals( $this->data['sidebar'] );
@@ -363,7 +362,7 @@ class MaskTemplate extends BaseTemplate {
 		if ( is_object( $logo ) ) {
 			$s .= $logo->getUrl();
 		} else {
-			$s .= $wgStylePath . '/mask/images/skull-coin.png';
+			$s .= $wgStylePath . '/Mask/images/skull-coin.png';
 		}
 
 		return $s;
