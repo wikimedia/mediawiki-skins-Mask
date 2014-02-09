@@ -46,10 +46,6 @@ body.skin-mask {
 	text-shadow: 0 -1px 0 #000, 0 1px 0 #777, 0 0 3px #000;
 }
 
-#nav-container div.portlet {
-	/* To reduce jumpiness as bits load
-	position: absolute;*/
-}
 #menu-left, #menu-right {
 	position:absolute;
 	bottom: 33px;
@@ -335,7 +331,7 @@ textarea#wpUploadDescription {
 	resize: vertical;
 	border: none;
 	box-shadow: 0 2px 7px inset #bab1a8;
-	font-family: 'Linux Biolinum';
+	font-family: 'Linux Biolinum', sans-serif;
 	font-size: 95%;
 }
 #editform #wpSummary,
@@ -392,7 +388,7 @@ hr {
 	padding: 0;
 	margin: .5em 0;
 	display: list-item !ie;
-	list-style: url(http://c.zaori.org/skins/splash/hr.png) inside !ie;
+	list-style: url('images/hr.png') inside !ie;
 	filter: alpha(opacity=0) !ie;
 	width: 0 !ie;
 }
@@ -411,7 +407,7 @@ td.diff-context {
 }
 td.diff-context div {
 	font-style: italic;
-	color: #555;;
+	color: #555;
 }
 td.diff-addedline div,
 td.diff-deletedline div,

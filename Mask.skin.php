@@ -35,7 +35,7 @@ class SkinMask extends SkinTemplate {
 			$out->addStyle( $wgFontCSSLocation, 'screen' );
 		}
 		# Add css
-		$out->addModuleStyles( 'skins.common.normalize' );
+		$out->addModuleStyles( 'mediawiki.skin.normalize' );
 		$out->addModuleStyles( 'skins.mask' );
 	}
 }
@@ -160,14 +160,11 @@ class MaskTemplate extends BaseTemplate {
 				?>
 			</div>
 			<?php
-			# Only show this if it's not the default skin for testing reasons
-			if ( $wgDefaultSkin != "mask" ) { ?>
 			<div id="bottom-nav">
 				<?php
 				$this->renderPortals( $this->data['sidebar'] );
 				?>
 			</div>
-			<?php } ?>
 		</div>
 	</div>
 	<div class="visualClear"></div>

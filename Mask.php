@@ -39,10 +39,9 @@ $wgExtensionCredits['skin'][] = array(
 	'url' => 'https://github.com/zaori/mw-skin-mask',
 );
 
+# Autoload the skin class, make it a valid skin, set up i18n
 $skinID = basename( dirname( __FILE__ ) );
 $dir = dirname( __FILE__ ) . '/';
-
-# Autoload the skin class, make it a valid skin, set up i18n
 
 # The first instance must be strtolower()ed so that useskin=nimbus works and
 # so that it does *not* force an initial capital (i.e. we do NOT want
@@ -54,6 +53,7 @@ $wgAutoloadClasses['SkinMask'] = $dir . 'Mask.skin.php';
 $wgExtensionMessagesFiles['SkinMask'] = $dir . 'Mask.i18n.php';
 $wgResourceModules['skins.mask'] = array(
 	'styles' => array(
-		'skins/mask/main.css' => array( 'media' => 'screen' )
-	)
+		'skins/Mask/main.css' => array( 'media' => 'screen' )
+	),
+	'position' => 'top'
 );
