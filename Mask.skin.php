@@ -35,7 +35,6 @@ class SkinMask extends SkinTemplate {
 			$out->addStyle( $wgFontCSSLocation, 'screen' );
 		}
 		# Add css
-		$out->addModuleStyles( 'mediawiki.skin.normalize' );
 		$out->addModuleStyles( 'skins.mask' );
 	}
 }

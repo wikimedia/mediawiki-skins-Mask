@@ -53,7 +53,8 @@ $wgAutoloadClasses['SkinMask'] = $dir . 'Mask.skin.php';
 $wgExtensionMessagesFiles['SkinMask'] = $dir . 'Mask.i18n.php';
 $wgResourceModules['skins.mask'] = array(
 	'styles' => array(
-		'skins/Mask/main.css' => array( 'media' => 'screen' )
+		'skins/Mask/resources/normalise.css' => array( 'media' => 'screen' ),
+		'skins/Mask/resources/main.css' => array( 'media' => 'screen' )
 	),
 	'position' => 'top'
 );
