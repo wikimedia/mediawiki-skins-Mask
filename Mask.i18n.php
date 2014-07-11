@@ -33,6 +33,3 @@ $messages['qqq'] = array(
 	'menu-left' => 'Label for top menu (left)',
 	'menu-right' => 'Label for top menu (right)',
 );
-
-
-
