@@ -20,7 +20,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @ingroup Skins
  */
 class SkinMask extends SkinTemplate {
-	var $skinname = 'mask', $stylename = 'mask',
+	public $skinname = 'mask', $stylename = 'mask',
 		$template = 'MaskTemplate', $useHeadElement = true;
 
 	/**
