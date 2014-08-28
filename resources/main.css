@@ -8,10 +8,12 @@
 #site-tools li#pt-logout {
 	display: none;
 }
+/* todo: Break this out */
 #page-tools li[id^=ca-nstab],
 #page-tools li#ca-talk,
 #page-tools li#ca-protect,
-#page-tools li#ca-watch {
+#page-tools li#ca-watch,
+#page-tools li#ca-unwatch {
 	display: none;
 }
 #nav-container h3 {
@@ -509,4 +511,33 @@ pre,
 
 div.postedit-container {
 	display: none;
+}
+
+/* Table of contents */
+#toc {
+	margin: 1em 2em;
+	display: inline-block;
+	padding: 1em 2.5em 1em 1em;
+	background: rgba(255,255,255,.4);
+	box-shadow: rgba(0,0,0,.1) 0px 2px 5px 0px
+}
+
+div#toc ul {
+	list-style: none;
+}
+.tocnumber {
+	display: none;
+}
+#toctitle h2 {
+	margin: 0 0 .5em;
+	font-size: 1.1em;
+	text-align: left;
+	display: inline-block;
+	font-family: "Linux Biolinum", sans-serif;
+}
+.toclevel-1 {
+	font-size: 1.2em;
+}
+.toclevel-2 {
+	font-size: .8em;
 }

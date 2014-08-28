@@ -383,7 +383,7 @@ class MaskTemplate extends BaseTemplate {
 		if ( is_object( $logo ) ) {
 			$s .= $logo->getUrl();
 		} else {
-			$s .= $wgStylePath . '/Mask/images/skull-coin.png';
+			$s .= $wgStylePath . '/Mask/resources/images/skull-coin.png';
 		}
 
 		return $s;
