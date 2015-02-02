@@ -155,7 +155,7 @@ class MaskTemplate extends BaseTemplate {
 				<span id="page-title" lang="<?php
 					$this->data['pageLanguage'] = $this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
 					$this->text( 'pageLanguage' );
-					?>" dir="auto"><?php $this->html( 'title' ) ?>
+					?>"><?php $this->html( 'title' ) ?>
 				</span>:
 				<?php  $this->cactions(); ?>
 			</div>
