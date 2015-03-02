@@ -50,10 +50,12 @@ $dir = dirname( __FILE__ ) . '/';
 $wgValidSkinNames[strtolower( $skinID )] = 'Mask';
 
 $wgAutoloadClasses['SkinMask'] = $dir . 'Mask.skin.php';
+$wgMessagesDirs['SkinMask'] = $dir . '/i18n';
 $wgExtensionMessagesFiles['SkinMask'] = $dir . 'Mask.i18n.php';
 $wgResourceModules['skins.mask'] = array(
 	'styles' => array(
 		'skins/Mask/resources/normalise.css' => array( 'media' => 'screen' ),
+		'skins/Mask/resources/fonts.css' => array( 'media' => 'screen' ),
 		'skins/Mask/resources/main.css' => array( 'media' => 'screen' )
 	),
 	'position' => 'top'

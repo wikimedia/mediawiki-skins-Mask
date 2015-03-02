@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"mask-desc": "{{desc|name=Mask}}",
+	"whatlinkshere-short": "Short link to [[special:whatlinkshere]]. Appears in page links.",
+	"refresh": "Appears in page links.",
+	"menu-left": "Label for top menu (left)",
+	"menu-right": "Label for top menu (right)"
+}

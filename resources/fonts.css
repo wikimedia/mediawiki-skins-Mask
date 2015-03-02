@@ -1,0 +1,18 @@
+/* Font definitions for fancy layout (fonts forked/last update in 2013?) */
+
+@font-face {
+	font-family: 'Linux Libertine Display';
+	src: url('fonts/LinLibertineDisplay.eot');
+	src: url('fonts/LinLibertineDisplay.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LinLibertineDisplay.svg') format('svg'),
+		url('fonts/LinLibertineDisplay.woff') format('woff'),
+		url('fonts/LinLibertineDisplay.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Linux Biolinum';
+	src: url('fonts/LinBiolinum.eot');
+	src: url('fonts/LinBiolinum.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LinBiolinum.svg') format('svg'),
+		url('fonts/LinBiolinum.woff') format('woff'),
+		url('fonts/LinBiolinum.ttf') format('truetype');
+}

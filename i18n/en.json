@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"mask-desc": "Mask skin for the Compendium of Fragments",
+	"mask-whatlinkshere": "Links",
+	"mask-refresh": "Refresh",
+	"mask-menu-left-label": "Project",
+	"mask-menu-right-label": "Navigation",
+	"mask-menu-left": "\n* aboutsite-url|about\n* recentchanges-url|recentchanges",
+	"mask-menu-right": "\n* index-url|index\n* randompage-url|randompage",
+	"mask-aboutsite-url": "Project:About",
+	"mask-index": "Index",
+	"mask-index-url": "Special:AllPages"
+}

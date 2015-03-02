@@ -30,12 +30,11 @@ class SkinMask extends SkinTemplate {
 		global $wgFontCSSLocation;
 		parent::setupSkinUserCss( $out );
 
-		# Because of weird font licensing issues or something
-		if ( isset( $wgFontCSSLocation ) ) {
-			$out->addStyle( $wgFontCSSLocation, 'screen' );
-		}
 		# Add css
-		$out->addModuleStyles( 'skins.mask' );
+		$out->addModuleStyles( array (
+			'mediawiki.skinning.content.externallinks',
+			'skins.mask'
+		) );
 	}
 }
 
@@ -315,13 +314,13 @@ class MaskTemplate extends BaseTemplate {
 					// what links here
 					if ( $this->getSkin()->getOutput()->isArticleRelated() ) {
 						$title = SpecialPage::getTitleFor( 'Whatlinkshere', $this->getSkin()->getTitle() );
-						$link = Linker::link( $title, wfMessage( 'whatlinkshere-short' )->text() ); ?>
+						$link = Linker::link( $title, wfMessage( 'mask-whatlinkshere' )->text() ); ?>
 						<li id="ca-links"><?php echo $link; ?></li>
 						<?php
 					}
 					// purge
 					$title = $this->getSkin()->getTitle();
-					$link = Linker::link( $title, wfMessage( 'refresh' )->text(), array(), array( 'action' => 'purge' ) ); ?>
+					$link = Linker::link( $title, wfMessage( 'mask-refresh' )->text(), array(), array( 'action' => 'purge' ) ); ?>
 					<li id="ca-purge"><?php echo $link; ?></li>
 				</ul>
 			</div>
