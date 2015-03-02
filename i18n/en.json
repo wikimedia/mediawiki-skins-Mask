@@ -7,9 +7,8 @@
 	"mask-refresh": "Refresh",
 	"mask-menu-left-label": "Project",
 	"mask-menu-right-label": "Navigation",
-	"mask-menu-left": "\n* aboutsite-url|about\n* recentchanges-url|recentchanges",
-	"mask-menu-right": "\n* index-url|index\n* randompage-url|randompage",
-	"mask-aboutsite-url": "Project:About",
+	"mask-menu-left": "\n* aboutpage|about\n* recentchanges-url|recentchanges",
+	"mask-menu-right": "\n* mask-index-url|mask-index\n* randompage-url|randompage",
 	"mask-index": "Index",
 	"mask-index-url": "Special:AllPages"
 }

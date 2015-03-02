@@ -3,8 +3,12 @@
 		"authors": []
 	},
 	"mask-desc": "{{desc|name=Mask}}",
-	"whatlinkshere-short": "Short link to [[special:whatlinkshere]]. Appears in page links.",
-	"refresh": "Appears in page links.",
-	"menu-left": "Label for top menu (left)",
-	"menu-right": "Label for top menu (right)"
+	"mask-whatlinkshere": "Short link to [[special:whatlinkshere]]. Appears in page links.",
+	"mask-refresh": "Refresh/purge page link. Appears in page links.",
+	"mask-menu-left-label": "Label for Project top navigation menu (left in ltr languages)",
+	"mask-menu-right-label": "Label for other top navigation menu (right in ltr languages)",
+	"mask-menu-left": "{{ignore}}\nProject menu contents; uses only other messages",
+	"mask-menu-right": "{{ignore}}\nNavigation menu contents; uses only other messages",
+	"mask-index": "Label for index/all pages link",
+	"mask-index-url": "{{ignore}}\nTarget page for 'index' link"
 }
