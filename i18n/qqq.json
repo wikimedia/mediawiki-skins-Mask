@@ -1,14 +1,16 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Liuxinyu970226"
+		]
 	},
 	"mask-desc": "{{desc|name=Mask}}",
-	"mask-whatlinkshere": "Short link to [[special:whatlinkshere]]. Appears in page links.",
-	"mask-refresh": "Refresh/purge page link. Appears in page links.",
-	"mask-menu-left-label": "Label for Project top navigation menu (left in ltr languages)",
-	"mask-menu-right-label": "Label for other top navigation menu (right in ltr languages)",
+	"mask-whatlinkshere": "Short link to [[special:whatlinkshere]]. Appears in page links.\n{{Identical|Link}}",
+	"mask-refresh": "Refresh/purge page link. Appears in page links.\n{{Identical|Refresh}}",
+	"mask-menu-left-label": "Label for Project top navigation menu (left in ltr languages)\n{{Identical|Project}}",
+	"mask-menu-right-label": "Label for other top navigation menu (right in ltr languages)\n{{Identical|Navigation}}",
 	"mask-menu-left": "{{ignore}}\nProject menu contents; uses only other messages",
 	"mask-menu-right": "{{ignore}}\nNavigation menu contents; uses only other messages",
-	"mask-index": "Label for index/all pages link",
+	"mask-index": "Label for index/all pages link\n{{Identical|Index}}",
 	"mask-index-url": "{{ignore}}\nTarget page for 'index' link"
 }
