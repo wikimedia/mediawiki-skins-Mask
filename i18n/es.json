@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Macofe"
 		]
 	},
+	"mask-desc": "Apariencia \"Mask\" para el Compendio de Fragmentos",
 	"mask-whatlinkshere": "Enlaces",
 	"mask-refresh": "Actualizar",
 	"mask-menu-left-label": "Proyecto",
