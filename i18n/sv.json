@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jenniesarina"
+			"Jenniesarina",
+			"Lokal Profil"
 		]
 	},
+	"mask-desc": "Mask-utseende för Compendium of Fragments",
 	"mask-whatlinkshere": "Länkar",
 	"mask-refresh": "Uppdatera",
 	"mask-menu-left-label": "Projekt",
