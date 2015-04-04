@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Cwlin0416"
 		]
 	},
+	"mask-desc": "Compendium of Fragments 用的 Mask 外觀",
 	"mask-whatlinkshere": "連結",
 	"mask-refresh": "重新整理",
 	"mask-menu-left-label": "專案",
