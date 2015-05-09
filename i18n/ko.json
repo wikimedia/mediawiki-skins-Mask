@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"IRTC1015"
+			"IRTC1015",
+			"아라"
 		]
 	},
+	"mask-desc": "Compendium of Fragments를 위한 마스크 스킨",
 	"mask-whatlinkshere": "링크",
 	"mask-refresh": "새로 고침",
 	"mask-menu-left-label": "프로젝트",
