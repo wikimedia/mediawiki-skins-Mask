@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Nemo bis"
 		]
 	},
-	"mask-desc": "{{desc|name=Mask}}",
+	"mask-desc": "{{desc|name=Mask}}\n----\n\"[http://wiki.zaori.org/compendium/Main_Page Compendium of Fragments]\" is the proper name of a wiki; translate, keep intact or replace with the domain name \"wiki.zaori.org\" as most suitable in your language.",
 	"mask-whatlinkshere": "Short link to [[special:whatlinkshere]]. Appears in page links.\n{{Identical|Link}}",
 	"mask-refresh": "Refresh/purge page link. Appears in page links.\n{{Identical|Refresh}}",
 	"mask-menu-left-label": "Label for Project top navigation menu (left in ltr languages)\n{{Identical|Project}}",
