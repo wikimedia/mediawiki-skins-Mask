@@ -368,6 +368,7 @@ textarea#wpUploadDescription {
 #editform #wpSummary,
 #wpDestFile,
 #wpReason,
+.mw-ui-input,
 input[type=text] {
 	border: none;
 	box-shadow: 0 1px 4px inset #bab1a8;
@@ -383,6 +384,28 @@ input[type=submit] {
 	padding: .1em 1em .25em;
 }
 
+/* Login form */
+.mw-ui-vform-field {
+	margin: 1em 0;
+}
+.mw-ui-vform-field label {
+	display: block;
+}
+.mw-ui-vform-field .mw-ui-checkbox label {
+	display: inline;
+}
+.mw-form-related-link-container {
+	text-align: left;
+}
+#mw-createaccount-cta {
+	margin: 0;
+}
+#mw-createaccount-cta .mw-ui-button {
+	padding-left: 1em;
+}
+.mw-ui-input {
+	min-width: 20em;
+}
 
 fieldset {
 	border: solid 1px #ccc;

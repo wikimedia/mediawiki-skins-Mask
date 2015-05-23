@@ -60,3 +60,15 @@ $wgResourceModules['skins.mask'] = array(
 	),
 	'position' => 'top'
 );
+
+# Get rid of wm.ui form styling
+$wgResourceModuleSkinStyles['mask'] = array(
+	'mediawiki.ui' => array(),
+	'mediawiki.ui.checkbox' => array(),
+	'mediawiki.ui.anchor' => array(),
+	'mediawiki.ui.button' => array(),
+	'mediawiki.ui.input' => array(),
+	'mediawiki.ui.radio' => array(),
+	'mediawiki.ui.icon' => array(),
+	'mediawiki.ui.text' => array(),
+);
