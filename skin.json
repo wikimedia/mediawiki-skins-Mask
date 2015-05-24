@@ -1,0 +1,50 @@
+{
+	"name": "Mask skin",
+	"version": "0.6.2",
+	"author": [
+		"Calimonius the Estrange",
+		"Jack Phoenix"
+	],
+	"url": "https://github.com/zaori/mw-skin-mask",
+	"descriptionmsg": "mask-desc",
+	"type": "skin",
+	"ValidSkinNames": {
+		"mask": "Mask"
+	},
+	"MessagesDirs": {
+		"SkinMask": [
+			"/i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SkinMask": "Mask.skin.php"
+	},
+	"ResourceModules": {
+		"skins.mask": {
+			"styles": {
+				"skins/Mask/resources/normalise.css": {
+					"media": "screen"
+				},
+				"skins/Mask/resources/fonts.css": {
+					"media": "screen"
+				},
+				"skins/Mask/resources/main.css": {
+					"media": "screen"
+				}
+			},
+			"position": "top"
+		}
+	},
+	"ResourceModuleSkinStyles": {
+		"mask": {
+			"mediawiki.ui": [],
+			"mediawiki.ui.checkbox": [],
+			"mediawiki.ui.anchor": [],
+			"mediawiki.ui.button": [],
+			"mediawiki.ui.input": [],
+			"mediawiki.ui.radio": [],
+			"mediawiki.ui.icon": [],
+			"mediawiki.ui.text": []
+		}
+	}
+}

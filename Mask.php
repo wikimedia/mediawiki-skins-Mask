@@ -24,51 +24,15 @@
  * @date 2013
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
+if ( function_exists( 'wfLoadSkin' ) ) {
+	wfLoadSkin( 'Mask' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['Mask'] = __DIR__ . '/i18n';
+	wfWarn(
+		'Deprecated PHP entry point used for Mask skin. Please use wfLoadSkin instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	);
+	return;
+} else {
+	die( 'This version of the Mask skin requires MediaWiki 1.25+' );
 }
-
-// Skin credits that will show up on Special:Version
-
-$wgExtensionCredits['skin'][] = array(
-	'path' => __FILE__,
-	'name' => 'Mask skin',
-	'version' => '0.6.1',
-	'author' => array( 'Calimonius the Estrange', 'Jack Phoenix' ),
-	'descriptionmsg' => 'mask-desc',
-	'url' => 'https://github.com/zaori/mw-skin-mask',
-);
-
-# Autoload the skin class, make it a valid skin, set up i18n
-$skinID = basename( dirname( __FILE__ ) );
-$dir = dirname( __FILE__ ) . '/';
-
-# The first instance must be strtolower()ed so that useskin=nimbus works and
-# so that it does *not* force an initial capital (i.e. we do NOT want
-# useskin=Mask) and the second instance is used to determine the name of
-# *this* file.
-$wgValidSkinNames[strtolower( $skinID )] = 'Mask';
-
-$wgAutoloadClasses['SkinMask'] = $dir . 'Mask.skin.php';
-$wgMessagesDirs['SkinMask'] = $dir . '/i18n';
-$wgExtensionMessagesFiles['SkinMask'] = $dir . 'Mask.i18n.php';
-$wgResourceModules['skins.mask'] = array(
-	'styles' => array(
-		'skins/Mask/resources/normalise.css' => array( 'media' => 'screen' ),
-		'skins/Mask/resources/fonts.css' => array( 'media' => 'screen' ),
-		'skins/Mask/resources/main.css' => array( 'media' => 'screen' )
-	),
-	'position' => 'top'
-);
-
-# Get rid of wm.ui form styling
-$wgResourceModuleSkinStyles['mask'] = array(
-	'mediawiki.ui' => array(),
-	'mediawiki.ui.checkbox' => array(),
-	'mediawiki.ui.anchor' => array(),
-	'mediawiki.ui.button' => array(),
-	'mediawiki.ui.input' => array(),
-	'mediawiki.ui.radio' => array(),
-	'mediawiki.ui.icon' => array(),
-	'mediawiki.ui.text' => array(),
-);
