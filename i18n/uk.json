@@ -4,5 +4,10 @@
 			"Ата"
 		]
 	},
-	"mask-desc": "Тема Mask для Compendium of Fragments"
+	"mask-desc": "Тема Mask для Compendium of Fragments",
+	"mask-whatlinkshere": "Посилання",
+	"mask-refresh": "Оновити",
+	"mask-menu-left-label": "Проект",
+	"mask-menu-right-label": "Навігація",
+	"mask-index": "Індекс"
 }
