@@ -46,5 +46,6 @@
 			"mediawiki.ui.icon": [],
 			"mediawiki.ui.text": []
 		}
-	}
+	},
+	"manifest_version": 1
 }
