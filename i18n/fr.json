@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Wladek92"
 		]
 	},
+	"mask-desc": "Masque d'habillage pour le Compendium of Fragments",
 	"mask-whatlinkshere": "Liens",
 	"mask-refresh": "Actualiser",
 	"mask-menu-left-label": "Projet",
