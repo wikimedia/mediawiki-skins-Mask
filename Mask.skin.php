@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Mask skin stuff.
  *
@@ -10,10 +9,6 @@
  * @authors Whoever wrote monobook
  * @date 2013
  */
-
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
-}
 
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
@@ -30,8 +25,8 @@ class SkinMask extends SkinTemplate {
 		global $wgFontCSSLocation;
 		parent::setupSkinUserCss( $out );
 
-		# Add css
-		$out->addModuleStyles( array (
+		# Add CSS
+		$out->addModuleStyles( array(
 			'mediawiki.skinning.content.externallinks',
 			'skins.mask'
 		) );
@@ -49,14 +44,9 @@ class MaskTemplate extends BaseTemplate {
 	 * Takes an associative array of data set from a SkinTemplate-based
 	 * class, and a wrapper for MediaWiki's localization database, and
 	 * outputs a formatted page.
-	 *
-	 * @access private
 	 */
 	function execute() {
 		global $wgHostLink;
-
-		// Suppress warnings to prevent notices about missing indexes in $this->data
-		wfSuppressWarnings();
 
 		$this->html( 'headelement' );
 	?><div id="globalWrapper">
@@ -68,7 +58,7 @@ class MaskTemplate extends BaseTemplate {
 						'a',
 						array(
 							'href' => $this->data['nav_urls']['mainpage']['href'],
-							'style' => "background-image:  url(" . $this->getLogoURL() . ");"
+							'style' => 'background-image: url(' . $this->getLogoURL() . ');'
 						)
 						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
 					);
@@ -156,7 +146,7 @@ class MaskTemplate extends BaseTemplate {
 					$this->text( 'pageLanguage' );
 					?>"><?php $this->html( 'title' ) ?>
 				</span>:
-				<?php  $this->cactions(); ?>
+				<?php $this->cactions(); ?>
 			</div>
 			<div class="visualClear"></div>
 		</div>
@@ -191,7 +181,6 @@ class MaskTemplate extends BaseTemplate {
 		$this->printTrail();
 		echo Html::closeElement( 'body' );
 		echo Html::closeElement( 'html' );
-		wfRestoreWarnings();
 	} // end of execute() method
 
 	/*************************************************************************************************/
@@ -203,7 +192,7 @@ class MaskTemplate extends BaseTemplate {
 	 * Message parsing is limited to first 4 lines only for this skin.
 	 */
 	private function renderNavigation( $linksMessage, $blockId ) {
-		$message = trim(  wfMessage( $linksMessage )->text() );
+		$message = trim( wfMessage( $linksMessage )->text() );
 		$lines = array_slice( explode( "\n", $message ), 0, 4 );
 		$links = array();
 		foreach ( $lines as $line ) {
@@ -334,7 +323,11 @@ class MaskTemplate extends BaseTemplate {
 	 * @param $cont array|string
 	 */
 	function customBox( $bar, $cont ) {
-		$portletAttribs = array( 'class' => 'generated-sidebar portlet', 'id' => Sanitizer::escapeId( "p-$bar" ), 'role' => 'navigation' );
+		$portletAttribs = array(
+			'class' => 'generated-sidebar portlet',
+			'id' => Sanitizer::escapeId( "p-$bar" ),
+			'role' => 'navigation'
+		);
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;
@@ -344,8 +337,8 @@ class MaskTemplate extends BaseTemplate {
 	?>
 
 		<h3><?php echo htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar ); ?></h3>
-		<div class='pBody'>
-			<?php   if ( is_array( $cont ) ) { ?>
+		<div class="pBody">
+			<?php if ( is_array( $cont ) ) { ?>
 			<ul>
 			<?php
 				foreach ( $cont as $key => $val ) {
@@ -356,7 +349,7 @@ class MaskTemplate extends BaseTemplate {
 			<?php
 		} else {
 			# allow raw HTML block to be defined by extensions
-			print $cont;
+			echo $cont;
 		}
 		?>
 		</div>
@@ -366,12 +359,12 @@ class MaskTemplate extends BaseTemplate {
 
 	/*************************************************************************************************/
 	/**
-	* Get URL to the logo image, either a custom one
-	* ([[File:Aurora-skin-logo.png]]) or a "sane default" if a custom logo
-	* doesn't exist.
-	*
-	* @return String: logo image URL
-	*/
+	 * Get URL to the logo image, either a custom one
+	 * ([[File:Mask skin coin.png]]) or a "sane default" if a custom logo
+	 * doesn't exist.
+	 *
+	 * @return string Logo image URL
+	 */
 	function getLogoURL() {
 		global $wgStylePath;
 

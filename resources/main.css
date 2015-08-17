@@ -480,7 +480,7 @@ td.diff-addedline .diffchange {
 }
 td.diff-deletedline .diffchange {
 	/* @embed */
-	background: url('images/squiggle-green.png')  repeat-x bottom;
+	background: url('images/squiggle-green.png') repeat-x bottom;
 }
 table.diff td {
 	padding: .2em .3em .1em;

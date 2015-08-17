@@ -7,6 +7,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Mask",
 	"descriptionmsg": "mask-desc",
+	"license-name": "GPL-2.0+",
 	"type": "skin",
 	"ValidSkinNames": {
 		"mask": "Mask"
@@ -17,18 +18,23 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinMask": "Mask.skin.php"
+		"SkinMask": "Mask.skin.php",
+		"MaskTemplate": "Mask.skin.php"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Mask"
 	},
 	"ResourceModules": {
 		"skins.mask": {
 			"styles": {
-				"skins/Mask/resources/normalise.css": {
+				"resources/normalise.css": {
 					"media": "screen"
 				},
-				"skins/Mask/resources/fonts.css": {
+				"resources/fonts.css": {
 					"media": "screen"
 				},
-				"skins/Mask/resources/main.css": {
+				"resources/main.css": {
 					"media": "screen"
 				}
 			},
