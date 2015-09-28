@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Strainu"
+			"Strainu",
+			"Minisarm"
 		]
 	},
+	"mask-desc": "Aspect mască pentru Compendium of Fragments",
 	"mask-whatlinkshere": "Legături",
 	"mask-refresh": "Reîncarcă",
 	"mask-menu-left-label": "Proiect",
