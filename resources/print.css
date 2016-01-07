@@ -1,0 +1,17 @@
+/* Styles for print view and printing */
+
+#toc,
+#catlinks,
+#top-container,
+#bottom-container,
+#tools-bottom,
+#siteSub,
+.mw-cite-backlink,
+.printfooter {
+	display: none;
+}
+
+body {
+	font-family: 'Linux Biolinum', sans-serif;
+	text-align: justify;
+}

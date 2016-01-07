@@ -36,6 +36,9 @@
 				},
 				"resources/main.css": {
 					"media": "screen"
+				},
+				"resources/print.css": {
+					"media": "print"
 				}
 			},
 			"position": "top"
