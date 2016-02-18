@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"HalanTul"
+			"HalanTul",
+			"Ай-Куо"
 		]
 	},
+	"mask-desc": " Compendium of Fragments анаан Mask тиэмэтин оҥоруу",
 	"mask-whatlinkshere": "Сигэлэр",
 	"mask-refresh": "Саҥарт",
 	"mask-menu-left-label": "Бырайыак",
