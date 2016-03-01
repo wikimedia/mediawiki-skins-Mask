@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Maroen1990"
 		]
 	},
+	"mask-whatlinkshere": "وصلات",
 	"mask-refresh": "أعد التحميل",
+	"mask-menu-left-label": "المشروع",
 	"mask-menu-right-label": "تصفح",
 	"mask-index": "فهرس"
 }
