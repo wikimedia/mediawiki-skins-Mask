@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"McSalama"
+			"McSalama",
+			"01miki10"
 		]
 	},
 	"mask-whatlinkshere": "Linkit",
 	"mask-refresh": "Päivitä",
-	"mask-menu-left-label": "Projekti"
+	"mask-menu-left-label": "Projekti",
+	"mask-menu-right-label": "Navigaatio",
+	"mask-index": "Hakemisto"
 }
