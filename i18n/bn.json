@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bodhisattwa"
+			"Bodhisattwa",
+			"আজিজ"
 		]
 	},
 	"mask-whatlinkshere": "সংযোগসমূহ",
+	"mask-refresh": "পুনঃতেজ",
 	"mask-menu-left-label": "প্রকল্প",
+	"mask-menu-right-label": "পরিভ্রমণ",
 	"mask-index": "নির্ঘন্ট"
 }
