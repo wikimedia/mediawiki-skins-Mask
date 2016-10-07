@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
+	"mask-desc": "Tema \"Mask\" para o Compêndio de Fragmentos",
 	"mask-whatlinkshere": "Ligações",
 	"mask-refresh": "Recarregar",
 	"mask-menu-left-label": "Projeto",
-	"mask-menu-right-label": "Navegação"
+	"mask-menu-right-label": "Navegação",
+	"mask-index": "Índice"
 }
