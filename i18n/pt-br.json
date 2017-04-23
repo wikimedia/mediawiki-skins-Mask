@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Felipe L. Ewald"
 		]
 	},
+	"mask-desc": "Máscara do tema para o Compendium of Fragments",
 	"mask-whatlinkshere": "Links",
 	"mask-refresh": "Atualizar",
 	"mask-menu-left-label": "Projeto",
