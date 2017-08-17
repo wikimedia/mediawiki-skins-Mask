@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"محمد أحمد عبد الفتاح",
-			"Maroen1990"
+			"Maroen1990",
+			"ديفيد"
 		]
 	},
+	"mask-desc": "برنامج مساعد قناع لخلاصة وافية من الفتات",
 	"mask-whatlinkshere": "وصلات",
 	"mask-refresh": "أعد التحميل",
 	"mask-menu-left-label": "المشروع",
