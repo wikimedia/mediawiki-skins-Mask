@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
+	"mask-desc": "Mask skin za Compendium of Fragments",
 	"mask-whatlinkshere": "Veze",
 	"mask-refresh": "Osveži",
 	"mask-menu-left-label": "Projekat",
-	"mask-menu-right-label": "Navigacija"
+	"mask-menu-right-label": "Navigacija",
+	"mask-index": "Indeks"
 }
