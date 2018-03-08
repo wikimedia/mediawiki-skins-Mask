@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Otokoume"
+			"Otokoume",
+			"Yusuke1109"
 		]
 	},
 	"mask-whatlinkshere": "リンク",
 	"mask-refresh": "更新",
 	"mask-menu-left-label": "プロジェクト",
-	"mask-menu-right-label": "ナビゲーション"
+	"mask-menu-right-label": "ナビゲーション",
+	"mask-index": "目次"
 }
