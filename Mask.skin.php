@@ -16,7 +16,7 @@
  */
 class SkinMask extends SkinTemplate {
 	public $skinname = 'mask', $stylename = 'mask',
-		$template = 'MaskTemplate', $useHeadElement = true;
+		$template = 'MaskTemplate';
 
 	/**
 	 * @param $out OutputPage
