@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mafcadio"
 		]
 	},
+	"mask-whatlinkshere": "Lias",
 	"mask-menu-left-label": "Projeta"
 }
