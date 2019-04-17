@@ -282,6 +282,9 @@ h6, dt {
 	font-size: 1em;
 }
 
+.mw-empty-elt {
+	display: none;
+}
 
 .ns-special h1,
 .ns-special h2,
