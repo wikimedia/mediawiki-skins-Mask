@@ -8,6 +8,7 @@
 		url('fonts/LinLibertineDisplay.woff') format('woff'),
 		url('fonts/LinLibertineDisplay.ttf') format('truetype');
 }
+
 @font-face {
 	font-family: 'Linux Biolinum';
 	src: url('fonts/LinBiolinum.eot');
