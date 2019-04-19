@@ -22,14 +22,13 @@ class SkinMask extends SkinTemplate {
 	 * @param $out OutputPage
 	 */
 	function setupSkinUserCss( OutputPage $out ) {
-		global $wgFontCSSLocation;
 		parent::setupSkinUserCss( $out );
 
 		# Add CSS
-		$out->addModuleStyles( array(
+		$out->addModuleStyles( [
 			'mediawiki.skinning.content.externallinks',
 			'skins.mask'
-		) );
+		] );
 	}
 }
 
@@ -48,6 +47,9 @@ class MaskTemplate extends BaseTemplate {
 	function execute() {
 		global $wgHostLink;
 
+		$skin = $this->getSkin();
+		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
+
 		$this->html( 'headelement' );
 	?><div id="globalWrapper">
 		<div id="top-container">
@@ -56,10 +58,10 @@ class MaskTemplate extends BaseTemplate {
 					<?php
 					echo Html::element(
 						'a',
-						array(
+						[
 							'href' => $this->data['nav_urls']['mainpage']['href'],
 							'style' => 'background-image: url(' . $this->getLogoURL() . ');'
-						)
+						]
 						+ Linker::tooltipAndAccesskeyAttribs( 'p-logo' )
 					);
 					?>
@@ -141,10 +143,8 @@ class MaskTemplate extends BaseTemplate {
 				?>
 			</div>
 			<div id="page-tools">
-				<span id="page-title" lang="<?php
-					$this->data['pageLanguage'] = $this->getSkin()->getTitle()->getPageViewLanguage()->getHtmlCode();
-					$this->text( 'pageLanguage' );
-					?>"><?php $this->html( 'title' ) ?>
+				<span id="page-title" lang="<?php $this->text( 'pageLanguage' ); ?>">
+					<?php $this->html( 'title' ) ?>
 				</span>:
 				<?php $this->cactions(); ?>
 			</div>
@@ -162,10 +162,10 @@ class MaskTemplate extends BaseTemplate {
 				if ( isset( $wgHostLink ) ) {
 					$url = $wgHostLink;
 				} else {
-					$title = Title::newFromText( wfMessage( 'aboutpage' )->inContentLanguage()->parse() );
+					$title = Title::newFromText( $this->getMsg( 'aboutpage' )->inContentLanguage()->parse() );
 					$url = $title->getFullURL();
 				}
-				echo Html::element( 'a', array('href' => $url ) );
+				echo Html::element( 'a', [ 'href' => $url ] );
 				?>
 			</div>
 			<div id="bottom-nav">
@@ -187,14 +187,15 @@ class MaskTemplate extends BaseTemplate {
 
 	/**
 	 * Print arbitrary block of navigation
-	 * @param $linksMessage
-	 * @param $blockId
 	 * Message parsing is limited to first 4 lines only for this skin.
+	 *
+	 * @param string $linksMessage
+	 * @param string $blockId
 	 */
 	private function renderNavigation( $linksMessage, $blockId ) {
-		$message = trim( wfMessage( $linksMessage )->text() );
+		$message = trim( $this->getMsg( $linksMessage )->text() );
 		$lines = array_slice( explode( "\n", $message ), 0, 4 );
-		$links = array();
+		$links = [];
 		foreach ( $lines as $line ) {
 			# ignore empty lines
 			if ( strlen( $line ) == 0 ) {
@@ -214,23 +215,23 @@ class MaskTemplate extends BaseTemplate {
 		$line_temp = explode( '|', trim( $line, '* ' ), 2 );
 		if ( count( $line_temp ) > 1 ) {
 			$line = $line_temp[1];
-			$link = wfMessage( $line_temp[0] )->inContentLanguage()->text();
+			$link = $this->getMsg( $line_temp[0] )->inContentLanguage()->text();
 		} else {
 			$line = $line_temp[0];
 			$link = $line_temp[0];
 		}
 
 		// Determine what to show as the human-readable link description
-		if ( wfMessage( $line )->isDisabled() ) {
+		if ( $this->getMsg( $line )->isDisabled() ) {
 			// It's *not* the name of a MediaWiki message, so display it as-is
 			$text = $line;
 		} else {
 			// Guess what -- it /is/ a MediaWiki message!
-			$text = wfMessage( $line )->text();
+			$text = $this->getMsg( $line )->text();
 		}
 
 		if ( $link != null ) {
-			if ( wfMessage( $line_temp[0] )->isDisabled() ) {
+			if ( $this->getMsg( $line_temp[0] )->isDisabled() ) {
 				$link = $line_temp[0];
 			}
 			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
@@ -246,14 +247,14 @@ class MaskTemplate extends BaseTemplate {
 			}
 		}
 
-		return array(
+		return [
 			'text' => $text,
 			'href' => $href
-		);
+		];
 	}
 
 	/**
-	 * @param $sidebar array
+	 * @param array $sidebar
 	 */
 	protected function renderPortals( $sidebar ) {
 		$sidebar['SEARCH'] = false;
@@ -274,9 +275,9 @@ class MaskTemplate extends BaseTemplate {
 		<div id="p-search" class="portlet" role="search">
 			<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 			<div id="simpleSearch">
-				<?php echo $this->makeSearchInput( array( 'id' => 'searchInput', 'type' => 'text' ) ); ?>
-				<?php echo $this->makeSearchButton( 'go', array( 'id' => 'searchGoButton', 'class' => 'searchButton' ) );
-				# echo $this->makeSearchButton( 'fulltext', array( 'id' => 'mw-searchButton', 'class' => 'searchButton' ) );
+				<?php echo $this->makeSearchInput( [ 'id' => 'searchInput', 'type' => 'text' ] ); ?>
+				<?php echo $this->makeSearchButton( 'go', [ 'id' => 'searchGoButton', 'class' => 'searchButton' ] );
+				# echo $this->makeSearchButton( 'fulltext', [ 'id' => 'mw-searchButton', 'class' => 'searchButton' ] );
 				?>
 				<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
 			</div>
@@ -290,6 +291,8 @@ class MaskTemplate extends BaseTemplate {
 	 * Shared between Monobook and Modern and stolen for mask
 	 */
 	function cactions() {
+		$skin = $this->getSkin();
+		$title = $skin->getTitle();
 	?>
 		<div id="p-cactions" class="portlet" role="navigation">
 			<div class="pBody">
@@ -301,15 +304,14 @@ class MaskTemplate extends BaseTemplate {
 					}
 
 					// what links here
-					if ( $this->getSkin()->getOutput()->isArticleRelated() ) {
-						$title = SpecialPage::getTitleFor( 'Whatlinkshere', $this->getSkin()->getTitle() );
-						$link = Linker::link( $title, wfMessage( 'mask-whatlinkshere' )->text() ); ?>
-						<li id="ca-links"><?php echo $link; ?></li>
+					if ( $skin->getOutput()->isArticleRelated() ) {
+						$wlhTitle = SpecialPage::getTitleFor( 'Whatlinkshere', $title );
+						$wlhLink = Linker::link( $wlhTitle, $this->getMsg( 'mask-whatlinkshere' )->text() ); ?>
+						<li id="ca-links"><?php echo $wlhLink; ?></li>
 						<?php
 					}
 					// purge
-					$title = $this->getSkin()->getTitle();
-					$link = Linker::link( $title, wfMessage( 'mask-refresh' )->text(), array(), array( 'action' => 'purge' ) ); ?>
+					$link = Linker::link( $title, $this->getMsg( 'mask-refresh' )->text(), [], [ 'action' => 'purge' ] ); ?>
 					<li id="ca-purge"><?php echo $link; ?></li>
 				</ul>
 			</div>
@@ -319,21 +321,21 @@ class MaskTemplate extends BaseTemplate {
 
 	/*************************************************************************************************/
 	/**
-	 * @param $bar string
-	 * @param $cont array|string
+	 * @param string $bar
+	 * @param array|string $cont
 	 */
 	function customBox( $bar, $cont ) {
-		$portletAttribs = array(
+		$portletAttribs = [
 			'class' => 'generated-sidebar portlet',
-			'id' => Sanitizer::escapeId( "p-$bar" ),
+			'id' => Sanitizer::escapeIdForAttribute( "p-$bar" ),
 			'role' => 'navigation'
-		);
+		];
 		$tooltip = Linker::titleAttrib( "p-$bar" );
 		if ( $tooltip !== false ) {
 			$portletAttribs['title'] = $tooltip;
 		}
 		echo '	' . Html::openElement( 'div', $portletAttribs );
-		$msgObj = wfMessage( $bar );
+		$msgObj = $this->getMsg( $bar );
 	?>
 
 		<h3><?php echo htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $bar ); ?></h3>
@@ -359,9 +361,8 @@ class MaskTemplate extends BaseTemplate {
 
 	/*************************************************************************************************/
 	/**
-	 * Get URL to the logo image, either a custom one
-	 * ([[File:Mask skin coin.png]]) or a "sane default" if a custom logo
-	 * doesn't exist.
+	 * Get URL to the logo image, either a custom one ([[File:Mask skin coin.png]])
+	 * or a "sane default" if a custom logo doesn't exist.
 	 *
 	 * @return string Logo image URL
 	 */
