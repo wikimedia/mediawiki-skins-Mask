@@ -1,0 +1,33 @@
+/* Login form */
+.mw-ui-vform-field {
+	margin: 1em 0;
+}
+
+.mw-ui-vform-field label {
+	display: block;
+}
+
+.mw-ui-vform-field .mw-ui-checkbox label {
+	display: inline;
+}
+
+.mw-form-related-link-container {
+	text-align: left;
+}
+
+#mw-createaccount-cta {
+	margin: 0;
+}
+
+#mw-createaccount-cta .mw-ui-button {
+	padding-left: 1em;
+}
+
+.mw-ui-input {
+	min-width: 20em;
+}
+
+/* Don't center the "Help with logging in" / "Forgot your password?" links, that looks awkward */
+.mw-ui-vform .mw-form-related-link-container {
+	text-align: left;
+}

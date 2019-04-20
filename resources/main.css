@@ -455,35 +455,6 @@ input[type=submit] {
 	padding: 0.1em 1em 0.25em;
 }
 
-/* Login form */
-.mw-ui-vform-field {
-	margin: 1em 0;
-}
-
-.mw-ui-vform-field label {
-	display: block;
-}
-
-.mw-ui-vform-field .mw-ui-checkbox label {
-	display: inline;
-}
-
-.mw-form-related-link-container {
-	text-align: left;
-}
-
-#mw-createaccount-cta {
-	margin: 0;
-}
-
-#mw-createaccount-cta .mw-ui-button {
-	padding-left: 1em;
-}
-
-.mw-ui-input {
-	min-width: 20em;
-}
-
 fieldset {
 	border: solid 1px #ccc;
 	border-width: 1px 0 0;
@@ -496,12 +467,11 @@ legend {
 	padding: 0 0.5em;
 }
 
-.htmlform-tip {
-	font-size: 90%;
-	color: #666;
-	padding: 1em 0;
-}
-
+/**
+ * @todo FIXME/CHECKME: This ID was originally used (only) by Special:Preferences,
+ * but since the OOUI-ification of that page, this ID appears to be no longer used
+ * by anything in MW core...
+ */
 #preftoc {
 	list-style: none;
 }
@@ -528,64 +498,9 @@ hr {
 	width: 0 !ie;
 }
 
-td.diff-deletedline {
-	background: rgba(125, 210, 130, 0.1);
-	border-color: rgba(125, 210, 130, 0.3);
-}
-
-td.diff-addedline {
-	background: rgba(100, 155, 255, 0.1);
-	border-color: rgba(100, 155, 255, 0.3);
-}
-
-td.diff-context {
-	background: rgba(90,90,90,.1)
-	border-color: #rgba(90,90,90,.3)
-}
-
-td.diff-context div {
-	font-style: italic;
-	color: #555;
-}
-
-td.diff-addedline div,
-td.diff-deletedline div,
-td.diff-context div {
-	padding: 2px 4px 1px 6px;
-}
-
-td.diff-addedline .diffchange,
-td.diff-deletedline .diffchange {
-	background: transparent;
-	padding-bottom: 1px;
-	color: #c00;
-}
-
-td.diff-addedline .diffchange {
-	/* @embed */
-	background: url('images/squiggle-blue.png') repeat-x bottom;
-}
-
-td.diff-deletedline .diffchange {
-	/* @embed */
-	background: url('images/squiggle-green.png') repeat-x bottom;
-}
-
-table.diff td {
-	padding: 0.2em 0.3em 0.1em;
-}
-
-td.diff-marker {
-	font-size: 1em;
-}
-
 table {
+	background: transparent;
 	text-align: left;
-}
-
-table.diff,
-table {
-	background: transparent;
 }
 
 .ns-6 #bodyContent,
@@ -593,10 +508,6 @@ table {
 .action-history #bodyContent,
 .ns-special #bodyContent {
 	font-size: 90%;
-}
-
-ul#pagehistory li {
-	border-color: rgba(0,0,0,0);
 }
 
 #contentSub {
@@ -625,10 +536,6 @@ pre,
 
 .right {
 	text-align: right;
-}
-
-div.postedit-container {
-	display: none;
 }
 
 /* Table of contents */

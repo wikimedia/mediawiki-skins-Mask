@@ -45,6 +45,11 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"mask": {
+			"+mediawiki.action.history.styles": "resources/skinStyles/mediawiki.action.history.styles.css",
+			"+mediawiki.action.view.postEdit": "resources/skinStyles/mediawiki.action.view.postEdit.css",
+			"+mediawiki.diff.styles": "resources/skinStyles/mediawiki.diff.styles.css",
+			"+mediawiki.htmlform.ooui.styles": "resources/skinStyles/mediawiki.htmlform.ooui.styles.css",
+			"+mediawiki.special.userlogin.login.styles": "resources/skinStyles/mediawiki.special.userlogin.login.styles.css",
 			"mediawiki.ui": [],
 			"mediawiki.ui.checkbox": [],
 			"mediawiki.ui.anchor": [],
