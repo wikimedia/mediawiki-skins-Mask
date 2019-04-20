@@ -108,12 +108,9 @@ class MaskTemplate extends BaseTemplate {
 						<?php $this->html( 'newtalk' ) ?>
 					</div>
 				<?php } ?>
-				<div id="jump-to-nav" class="mw-jump">
-					<?php $this->msg( 'jumpto' ) ?>
-					<a href="#nav-container"><?php $this->msg( 'jumptonavigation' ) ?></a>
-					<?php $this->msg( 'comma-separator' ) ?>
-					<a href="#searchInput"><?php $this->msg( 'jumptosearch' ) ?></a>
-				</div>
+				<div id="jump-to-nav"></div>
+				<a class="mw-jump-link" href="#nav-container"><?php $this->msg( 'mask-jump-to-navigation' ) ?></a>
+				<a class="mw-jump-link" href="#searchInput"><?php $this->msg( 'mask-jump-to-search' ) ?></a>
 
 				<!-- start content -->
 				<?php $this->html( 'bodytext' ) ?>

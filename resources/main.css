@@ -663,3 +663,16 @@ div#toc ul {
 .toclevel-2 {
 	font-size: 0.8em;
 }
+
+/* Copy of mixin-screen-reader-text() LESS mixin from /resources/src/mediawiki.less/mediawiki.mixins.less@REL1_32 */
+.mw-jump-link:not( :focus ) {
+	display: block;
+	position: absolute !important; /* stylelint-disable-line declaration-no-important */
+	clip: rect( 1px, 1px, 1px, 1px );
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}

@@ -5,6 +5,8 @@
 	"mask-desc": "Mask skin for the Compendium of Fragments",
 	"mask-whatlinkshere": "Links",
 	"mask-refresh": "Refresh",
+	"mask-jump-to-navigation": "Jump to navigation",
+	"mask-jump-to-search": "Jump to search",
 	"mask-menu-left-label": "Project",
 	"mask-menu-right-label": "Navigation",
 	"mask-menu-left": "\n* aboutpage|about\n* recentchanges-url|recentchanges",
