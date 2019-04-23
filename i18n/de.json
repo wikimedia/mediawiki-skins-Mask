@@ -7,6 +7,8 @@
 	"mask-desc": "Benutzeroberfläche „Mask“ für das Kompendium der Fragmente",
 	"mask-whatlinkshere": "Links",
 	"mask-refresh": "Aktualisieren",
+	"mask-jump-to-navigation": "Zur Navigation springen",
+	"mask-jump-to-search": "Zur Suche springen",
 	"mask-menu-left-label": "Projekt",
 	"mask-menu-right-label": "Navigation",
 	"mask-index": "Index"
