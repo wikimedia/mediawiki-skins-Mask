@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ukabia"
+			"Ukabia",
+			"Oby Ezeilo"
 		]
 	},
 	"mask-whatlinkshere": "Òjikọ",
+	"mask-jump-to-navigation": "mabanye n'ụzọ aga esi gaa",
+	"mask-jump-to-search": "mabanye na chọọ",
 	"mask-menu-right-label": "Nturuụzọ̀"
 }

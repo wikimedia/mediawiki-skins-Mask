@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"The Polish"
+			"The Polish",
+			"Railfail536"
 		]
 	},
 	"mask-desc": "Skin Mask dla Compendium of Fragments",
 	"mask-whatlinkshere": "Linki",
 	"mask-refresh": "Odśwież",
+	"mask-jump-to-search": "Przejdź do wyszukiwania",
 	"mask-menu-left-label": "Projekt",
 	"mask-menu-right-label": "Nawigacja",
 	"mask-index": "Indeks"
