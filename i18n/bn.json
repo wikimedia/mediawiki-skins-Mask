@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Bodhisattwa",
-			"আজিজ"
+			"আজিজ",
+			"আফতাবুজ্জামান"
 		]
 	},
 	"mask-whatlinkshere": "সংযোগসমূহ",
 	"mask-refresh": "পুনঃতেজ",
+	"mask-jump-to-navigation": "পরিভ্রমণে ঝাঁপ দিন",
+	"mask-jump-to-search": "অনুসন্ধানে ঝাঁপ দিন",
 	"mask-menu-left-label": "প্রকল্প",
 	"mask-menu-right-label": "পরিভ্রমণ",
 	"mask-index": "নির্ঘন্ট"

@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"IRTC1015",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"mask-desc": "Compendium of Fragments를 위한 마스크 스킨",
 	"mask-whatlinkshere": "링크",
 	"mask-refresh": "새로 고침",
+	"mask-jump-to-navigation": "둘러보기로 이동",
 	"mask-menu-left-label": "프로젝트",
 	"mask-menu-right-label": "둘러보기",
 	"mask-index": "색인"
