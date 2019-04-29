@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Senpremì"
 		]
 	},
 	"mask-desc": "Tema Mask per Compendium of Fragments",
 	"mask-whatlinkshere": "Collegamenti",
 	"mask-refresh": "Aggiorna",
+	"mask-jump-to-navigation": "Vai alla navigazione",
+	"mask-jump-to-search": "Vai alla ricerca",
 	"mask-menu-left-label": "Progetto",
 	"mask-menu-right-label": "Navigazione",
 	"mask-index": "Indice"
