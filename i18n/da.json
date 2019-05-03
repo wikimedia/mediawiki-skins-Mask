@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joedalton"
+			"Joedalton",
+			"Saederup92"
 		]
 	},
 	"mask-desc": "Mask-tema for Compendium of Fragments",
 	"mask-whatlinkshere": "Henvisninger",
 	"mask-refresh": "Opdater",
+	"mask-jump-to-navigation": "Spring til navigation",
+	"mask-jump-to-search": "Spring til søgning",
 	"mask-menu-left-label": "Projekt",
 	"mask-menu-right-label": "Navigation",
 	"mask-index": "Indeks"
