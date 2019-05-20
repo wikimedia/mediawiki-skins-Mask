@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"Misibacsi"
 		]
 	},
 	"mask-whatlinkshere": "Hivatkozások",
 	"mask-refresh": "Frissítés",
+	"mask-jump-to-search": "Ugrás a kereséshez",
 	"mask-menu-left-label": "Projekt",
 	"mask-menu-right-label": "Navigáció",
 	"mask-index": "Tartalomjegyzék"
