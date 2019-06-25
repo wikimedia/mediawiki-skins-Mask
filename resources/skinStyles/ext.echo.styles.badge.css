@@ -1,0 +1,4 @@
+#p-personal li#pt-notifications-alert,
+#p-personal li#pt-notifications-notice {
+	display: inline-block;
+}
