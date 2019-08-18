@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ильнар"
+			"Ильнар",
+			"Ерней"
 		]
 	},
 	"mask-desc": "Compendium of Fragments өчен Mask бизәлеше",
 	"mask-whatlinkshere": "Сылтамалар",
 	"mask-refresh": "Яңарту",
+	"mask-jump-to-navigation": "Навигациягә күчү",
+	"mask-jump-to-search": "Эзләүгә күчү",
 	"mask-menu-left-label": "Проект",
 	"mask-menu-right-label": "Навигация",
 	"mask-index": "Индекс"
