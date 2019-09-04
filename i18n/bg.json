@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"StanProg"
+			"StanProg",
+			"Vlad5250"
 		]
 	},
 	"mask-desc": "Облик „Маска“ за „Compendium of Fragments“",
 	"mask-whatlinkshere": "Препратки",
 	"mask-refresh": "Опресняване",
+	"mask-jump-to-navigation": "Направо към навигацията",
+	"mask-jump-to-search": "Направо към търсенето",
 	"mask-menu-left-label": "Проект",
 	"mask-menu-right-label": "Навигация",
 	"mask-index": "Индекс"
