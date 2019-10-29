@@ -3,12 +3,15 @@
 		"authors": [
 			"Milicevic01",
 			"Obsuser",
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
 	"mask-desc": "Тема „Маск” за Compendium of Fragments",
 	"mask-whatlinkshere": "Везе",
 	"mask-refresh": "Освежи",
+	"mask-jump-to-navigation": "Пређи на навигацију",
+	"mask-jump-to-search": "Пређи на претрагу",
 	"mask-menu-left-label": "Пројекат",
 	"mask-menu-right-label": "Навигација",
 	"mask-index": "Индекс"

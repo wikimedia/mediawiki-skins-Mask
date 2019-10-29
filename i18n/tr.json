@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gokalpselamet"
+			"Gokalpselamet",
+			"BaRaN6161 TURK"
 		]
 	},
-	"mask-refresh": "Yenile"
+	"mask-desc": "Fragment of Compendium için görünümün maskesini",
+	"mask-whatlinkshere": "Bağlantılar",
+	"mask-refresh": "Yenile",
+	"mask-jump-to-navigation": "Gezinti kısmına atla",
+	"mask-jump-to-search": "Arama kısmına atla",
+	"mask-menu-left-label": "Proje",
+	"mask-menu-right-label": "Gezinti",
+	"mask-index": "Dizin"
 }
