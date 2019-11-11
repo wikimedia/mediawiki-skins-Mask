@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chameleon222"
+			"Chameleon222",
+			"Jon Harald Søby"
 		]
 	},
 	"mask-desc": "Mask-utseende for Compendium of Fragments",
 	"mask-whatlinkshere": "Lenker",
 	"mask-refresh": "Gjenoppfrisk",
+	"mask-jump-to-navigation": "Til navigasjon",
+	"mask-jump-to-search": "Til søk",
 	"mask-menu-left-label": "Prosjekt",
 	"mask-menu-right-label": "Navigasjon",
 	"mask-index": "Indeks"
