@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"DannyS712"
 		]
 	},
 	"mask-desc": "Apariencia \"Mask\" para el Compendio de Fragmentos",
 	"mask-whatlinkshere": "Enlaces",
 	"mask-refresh": "Actualizar",
+	"mask-jump-to-navigation": "Ir a la navegación",
+	"mask-jump-to-search": "Ir a la búsqueda",
 	"mask-menu-left-label": "Proyecto",
 	"mask-menu-right-label": "Navegación",
 	"mask-index": "Índice"
