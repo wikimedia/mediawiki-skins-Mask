@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minh Nguyen"
+			"Minh Nguyen",
+			"Thienhau2003"
 		]
 	},
 	"mask-desc": "Giao diện mặt nạ cho Compendium of Fragments",
 	"mask-whatlinkshere": "Liên kết",
-	"mask-refresh": "Làm tươi",
+	"mask-refresh": "Làm mới",
 	"mask-menu-left-label": "Dự án",
 	"mask-menu-right-label": "Điều hướng",
 	"mask-index": "Chỉ mục"
