@@ -3,11 +3,15 @@
 		"authors": [
 			"Shirayuki",
 			"Otokoume",
-			"Yusuke1109"
+			"Yusuke1109",
+			"Aefgh39622"
 		]
 	},
+	"mask-desc": "Compendium of FragmentsのMaskスキン",
 	"mask-whatlinkshere": "リンク",
 	"mask-refresh": "更新",
+	"mask-jump-to-navigation": "ナビゲーションに移動",
+	"mask-jump-to-search": "検索に移動",
 	"mask-menu-left-label": "プロジェクト",
 	"mask-menu-right-label": "ナビゲーション",
 	"mask-index": "目次"
