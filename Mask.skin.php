@@ -10,6 +10,8 @@
  * @date 2013
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  * @ingroup Skins
@@ -369,7 +371,12 @@ class MaskTemplate extends BaseTemplate {
 		$s = '';
 		// If there is a custom logo, display it; otherwise show the skin's
 		// default logo image
-		$logo = wfFindFile( 'Mask_skin_coin.png' );
+		if ( method_exists( MediaWikiServices::class, 'getRepoGroup' ) ) {
+			// MediaWiki 1.34+
+			$logo = MediaWikiServices::getInstance()->getRepoGroup()->findFile( 'Mask_skin_coin.png' );
+		} else {
+			$logo = wfFindFile( 'Mask_skin_coin.png' );
+		}
 		if ( is_object( $logo ) ) {
 			$s .= $logo->getUrl();
 		} else {
