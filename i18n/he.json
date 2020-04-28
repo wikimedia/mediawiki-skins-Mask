@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amire80"
+			"Amire80",
+			"Steeve815"
 		]
 	},
 	"mask-desc": "עיצוב Mask עבור Compendium of Fragments",
 	"mask-whatlinkshere": "קישורים",
 	"mask-refresh": "רענון",
+	"mask-jump-to-navigation": "קפיצה לניווט",
+	"mask-jump-to-search": "קפיצה לחיפוש",
 	"mask-menu-left-label": "מיזם",
 	"mask-menu-right-label": "ניווט",
 	"mask-index": "אינדקס"
