@@ -27,6 +27,7 @@
 	},
 	"ResourceModules": {
 		"skins.mask": {
+			"class": "ResourceLoaderSkinModule",
 			"styles": {
 				"resources/normalise.css": {
 					"media": "screen"
