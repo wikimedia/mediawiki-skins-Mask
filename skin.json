@@ -1,6 +1,6 @@
 {
 	"name": "Mask",
-	"version": "0.6.2",
+	"version": "0.7",
 	"author": [
 		"Calimonius the Estrange",
 		"Jack Phoenix"
@@ -10,10 +10,19 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
-		"mask": "Mask"
+		"mask": {
+			"class": "SkinMask",
+			"args": [ {
+				"name": "mask",
+				"styles": [
+					"mediawiki.skinning.content.externallinks",
+					"skins.mask"
+				] }
+			]
+		}
 	},
 	"MessagesDirs": {
 		"SkinMask": [

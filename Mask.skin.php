@@ -13,25 +13,12 @@
 use MediaWiki\MediaWikiServices;
 
 /**
- * Inherit main code from SkinTemplate, set the CSS and template filter.
+ * Inherit main code from SkinTemplate & set the template filter.
+ *
  * @ingroup Skins
  */
 class SkinMask extends SkinTemplate {
-	public $skinname = 'mask', $stylename = 'mask',
-		$template = 'MaskTemplate';
-
-	/**
-	 * @param $out OutputPage
-	 */
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-
-		# Add CSS
-		$out->addModuleStyles( [
-			'mediawiki.skinning.content.externallinks',
-			'skins.mask'
-		] );
-	}
+	public $template = 'MaskTemplate';
 }
 
 /**
