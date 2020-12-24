@@ -34,7 +34,7 @@ class MaskTemplate extends BaseTemplate {
 	 * outputs a formatted page.
 	 */
 	function execute() {
-		global $wgHostLink;
+		global $wgMaskSkinHostLink;
 
 		$skin = $this->getSkin();
 		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
@@ -145,8 +145,8 @@ class MaskTemplate extends BaseTemplate {
 		<div id="bottom-nav-container">
 			<div id="bottom-coin" role="banner">
 				<?php
-				if ( isset( $wgHostLink ) ) {
-					$url = $wgHostLink;
+				if ( isset( $wgMaskSkinHostLink ) ) {
+					$url = $wgMaskSkinHostLink;
 				} else {
 					$title = Title::newFromText( $this->getMsg( 'aboutpage' )->inContentLanguage()->parse() );
 					$url = $title->getFullURL();
