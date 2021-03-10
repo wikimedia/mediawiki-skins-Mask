@@ -126,7 +126,6 @@ body {
 
 #border-top {
 	height: 82px;
-	/* @embed */
 	background: url('images/border-top.png') no-repeat 0 0;
 	margin-bottom: -82px;
 }
