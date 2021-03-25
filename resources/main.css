@@ -466,24 +466,6 @@ legend {
 	padding: 0 0.5em;
 }
 
-/**
- * @todo FIXME/CHECKME: This ID was originally used (only) by Special:Preferences,
- * but since the OOUI-ification of that page, this ID appears to be no longer used
- * by anything in MW core...
- */
-#preftoc {
-	list-style: none;
-}
-
-#preftoc li {
-	display: inline;
-	margin: 0 0.5em;
-}
-
-#preftoc li.selected a {
-	color: #000;
-}
-
 hr {
 	/* @embed */
 	background: url('images/hr.png') no-repeat -150px 100%;
