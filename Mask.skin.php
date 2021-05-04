@@ -279,6 +279,7 @@ class MaskTemplate extends BaseTemplate {
 	function cactions() {
 		$skin = $this->getSkin();
 		$title = $skin->getTitle();
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
 	?>
 		<div id="p-cactions" class="portlet" role="navigation">
 			<div class="pBody">
@@ -292,12 +293,12 @@ class MaskTemplate extends BaseTemplate {
 					// what links here
 					if ( $skin->getOutput()->isArticleRelated() ) {
 						$wlhTitle = SpecialPage::getTitleFor( 'Whatlinkshere', $title );
-						$wlhLink = Linker::link( $wlhTitle, $this->getMsg( 'mask-whatlinkshere' )->text() ); ?>
+						$wlhLink = $linkRenderer->makeLink( $wlhTitle, $this->getMsg( 'mask-whatlinkshere' )->text() ); ?>
 						<li id="ca-links"><?php echo $wlhLink; ?></li>
 						<?php
 					}
 					// purge
-					$link = Linker::link( $title, $this->getMsg( 'mask-refresh' )->text(), [], [ 'action' => 'purge' ] ); ?>
+					$link = $linkRenderer->makeLink( $title, $this->getMsg( 'mask-refresh' )->text(), [], [ 'action' => 'purge' ] ); ?>
 					<li id="ca-purge"><?php echo $link; ?></li>
 				</ul>
 			</div>
