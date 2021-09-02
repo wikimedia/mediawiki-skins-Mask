@@ -31,8 +31,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SkinMask": "Mask.skin.php",
-		"MaskTemplate": "Mask.skin.php"
+		"SkinMask": "includes/SkinMask.php",
+		"MaskTemplate": "includes/MaskTemplate.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",

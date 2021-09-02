@@ -13,15 +13,6 @@
 use MediaWiki\MediaWikiServices;
 
 /**
- * Inherit main code from SkinTemplate & set the template filter.
- *
- * @ingroup Skins
- */
-class SkinMask extends SkinTemplate {
-	public $template = 'MaskTemplate';
-}
-
-/**
  * Main skin class
  * @ingroup Skins
  */
@@ -190,6 +181,7 @@ class MaskTemplate extends BaseTemplate {
 			$links[] = $this->parseItem( $line );
 		}
 
+		// @phan-suppress-next-line SecurityCheck-XSS
 		$this->customBox( $blockId, $links );
 	}
 
@@ -216,6 +208,7 @@ class MaskTemplate extends BaseTemplate {
 			$text = $this->getMsg( $line )->text();
 		}
 
+		$href = '#';
 		if ( $link != null ) {
 			if ( $this->getMsg( $line_temp[0] )->isDisabled() ) {
 				$link = $line_temp[0];
@@ -227,8 +220,6 @@ class MaskTemplate extends BaseTemplate {
 				if ( $title ) {
 					$title = $title->fixSpecialName();
 					$href = $title->getLocalURL();
-				} else {
-					$href = '#';
 				}
 			}
 		}
