@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Lakejason0"
 		]
 	},
 	"mask-desc": "用于片段摘要的掩饰皮肤",
 	"mask-whatlinkshere": "链接",
 	"mask-refresh": "刷新",
+	"mask-jump-to-navigation": "跳到导航",
+	"mask-jump-to-search": "跳到搜索",
 	"mask-menu-left-label": "项目",
 	"mask-menu-right-label": "导航",
 	"mask-index": "索引"

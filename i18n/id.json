@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"William Surya Permana"
+			"William Surya Permana",
+			"Daud I.F. Argana"
 		]
 	},
 	"mask-desc": "Kulit topeng Compendium of Fragments",
 	"mask-whatlinkshere": "Pranala",
 	"mask-refresh": "Muat ulang",
+	"mask-jump-to-navigation": "Pindah ke navigasi",
+	"mask-jump-to-search": "Pindah ke pencarian",
 	"mask-menu-left-label": "Proyek",
 	"mask-menu-right-label": "Navigasi",
 	"mask-index": "Indeks"

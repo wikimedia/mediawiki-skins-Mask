@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Andriy.v"
 		]
 	},
 	"mask-desc": "Тема Mask для Compendium of Fragments",
@@ -9,7 +10,7 @@
 	"mask-refresh": "Оновити",
 	"mask-jump-to-navigation": "Перейти до навігації",
 	"mask-jump-to-search": "Перейти до пошуку",
-	"mask-menu-left-label": "Проект",
+	"mask-menu-left-label": "Проєкт",
 	"mask-menu-right-label": "Навігація",
 	"mask-index": "Індекс"
 }

@@ -2,12 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"01miki10",
-			"McSalama"
+			"McSalama",
+			"Pyscowicz"
 		]
 	},
 	"mask-desc": "Mask-ulkoasu Compendium of Fragmentsia varten",
 	"mask-whatlinkshere": "Linkit",
 	"mask-refresh": "Päivitä",
+	"mask-jump-to-navigation": "Siirry navigaatioon",
+	"mask-jump-to-search": "Siirry hakuun",
 	"mask-menu-left-label": "Projekti",
 	"mask-menu-right-label": "Navigaatio",
 	"mask-index": "Hakemisto"
