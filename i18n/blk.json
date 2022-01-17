@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Khun Kt",
 			"咽頭べさ"
 		]
 	},
-	"mask-refresh": "ထိုမ်ႏစဲစ်ချာယင်း"
+	"mask-whatlinkshere": "လိဉ့်ဖိုင်ႏ",
+	"mask-refresh": "ထိုမ်ႏစဲစ်ချာယင်း",
+	"mask-menu-left-label": "ပရောစဲစ်",
+	"mask-index": "ဟော်ꩻထွားရီးတာႏ"
 }
