@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"mask-whatlinkshere": "Liammoù",
 	"mask-refresh": "Freskaat",
+	"mask-jump-to-navigation": "Mont d’ar merdeerezh",
+	"mask-jump-to-search": "Mont d’ar c’hlask",
 	"mask-menu-left-label": "Raktres",
 	"mask-menu-right-label": "Merdeiñ",
 	"mask-index": "Meneger"
