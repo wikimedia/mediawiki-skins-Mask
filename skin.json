@@ -20,7 +20,6 @@
 				"name": "mask",
 				"bodyOnly": true,
 				"styles": [
-					"mediawiki.skinning.content.externallinks",
 					"skins.mask"
 				] }
 			]
@@ -42,6 +41,10 @@
 	"ResourceModules": {
 		"skins.mask": {
 			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-links": true,
+				"content-links-external": true
+			},
 			"styles": {
 				"resources/normalise.css": {
 					"media": "screen"
