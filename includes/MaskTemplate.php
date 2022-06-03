@@ -30,7 +30,6 @@ class MaskTemplate extends BaseTemplate {
 		$skin = $this->getSkin();
 		$this->data['pageLanguage'] = $skin->getTitle()->getPageViewLanguage()->getHtmlCode();
 
-		$this->html( 'headelement' );
 	?><div id="globalWrapper">
 		<div id="top-container">
 			<div id="nav-container">
@@ -155,9 +154,6 @@ class MaskTemplate extends BaseTemplate {
 	<div class="visualClear"></div>
 </div>
 <?php
-		$this->printTrail();
-		echo Html::closeElement( 'body' );
-		echo Html::closeElement( 'html' );
 	} // end of execute() method
 
 	/*************************************************************************************************/
