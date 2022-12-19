@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Toliño"
 		]
 	},
 	"mask-desc": "Apariencia Mask para o Compendio de Fragmentos",
 	"mask-whatlinkshere": "Ligazóns",
 	"mask-refresh": "Refrescar",
+	"mask-jump-to-navigation": "Saltar á navegación",
+	"mask-jump-to-search": "Saltar á procura",
 	"mask-menu-left-label": "Proxecto",
 	"mask-menu-right-label": "Navegación",
 	"mask-index": "Índice"
