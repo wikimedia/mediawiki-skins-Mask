@@ -249,7 +249,11 @@ class MaskTemplate extends BaseTemplate {
 			<form action="<?php $this->text( 'wgScript' ) ?>" id="searchform">
 			<div id="simpleSearch">
 				<?php echo $this->makeSearchInput( [ 'id' => 'searchInput', 'type' => 'text' ] ); ?>
-				<?php echo $this->makeSearchButton( 'go', [ 'id' => 'searchGoButton', 'class' => 'searchButton' ] );
+				<?php echo $this->makeSearchButton( 'go', [
+					'id' => 'searchGoButton',
+					'class' => 'searchButton',
+					'value' => $this->getMsg( 'searcharticle' )->text()
+				] );
 				# echo $this->makeSearchButton( 'fulltext', [ 'id' => 'mw-searchButton', 'class' => 'searchButton' ] );
 				?>
 				<input type='hidden' name="title" value="<?php $this->text( 'searchtitle' ) ?>"/>
