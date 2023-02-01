@@ -564,3 +564,8 @@ div#toc ul {
 	padding: 0;
 	overflow: hidden;
 }
+
+/* Standard clear class used by many social tools etc. */
+.visualClear {
+	clear: both;
+}
