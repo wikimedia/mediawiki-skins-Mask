@@ -565,6 +565,17 @@ div#toc ul {
 	overflow: hidden;
 }
 
+/* user notification thing a.k.a the Orange Bar of Death */
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px solid #ffa500;
+	color: #000;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+
 /* Standard clear class used by many social tools etc. */
 .visualClear {
 	clear: both;
