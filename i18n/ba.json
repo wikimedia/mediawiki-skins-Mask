@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Sagan",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"З. ӘЙЛЕ"
 		]
 	},
-	"mask-desc": " Mask  Compendium of Fragments биҙәү өсөн тема",
+	"mask-desc": "Compendium of Fragments өсөн Mask биҙәлеш темаһы",
 	"mask-whatlinkshere": "Һылтанмалар",
-	"mask-refresh": "Яңыртыу",
+	"mask-refresh": "Яңыртырға",
 	"mask-menu-left-label": "Проект",
-	"mask-menu-right-label": "Төп йүнәлештәр",
+	"mask-menu-right-label": "Навигация",
 	"mask-index": "Индекс"
 }
