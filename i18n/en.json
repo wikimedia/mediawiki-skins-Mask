@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
+	"mask-prefs-talkpage": "[[mw:Skin talk:Mask|{{int:talk}}]]",
 	"mask-desc": "Mask skin for the Compendium of Fragments",
 	"mask-whatlinkshere": "Links",
 	"mask-refresh": "Refresh",
