@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"SMP"
 		]
 	},
+	"mask-desc": "Aparença \"Mask\" per al Compendi de Fragments",
 	"mask-whatlinkshere": "Enllaços",
 	"mask-refresh": "Actualitza",
+	"mask-jump-to-navigation": "Salta a navegació",
+	"mask-jump-to-search": "Salta a la cerca",
 	"mask-menu-left-label": "Projecte",
 	"mask-menu-right-label": "Navegació",
 	"mask-index": "Índex"
