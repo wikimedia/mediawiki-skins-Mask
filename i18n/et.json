@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jack Phoenix"
+		]
+	},
+	"mask-jump-to-navigation": "Mine navigeerimisribale",
+	"mask-jump-to-search": "Mine otsikasti",
+	"mask-menu-left-label": "Projekt",
+	"mask-menu-right-label": "Navigeerimine"
+}
