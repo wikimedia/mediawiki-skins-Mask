@@ -135,7 +135,7 @@ class MaskTemplate extends BaseTemplate {
 		<div id="bottom-nav-container">
 			<div id="bottom-coin" role="banner">
 				<?php
-				if ( isset( $wgMaskSkinHostLink ) ) {
+				if ( $wgMaskSkinHostLink !== null ) {
 					$url = $wgMaskSkinHostLink;
 				} else {
 					$title = Title::newFromText( $this->getMsg( 'aboutpage' )->inContentLanguage()->parse() );
