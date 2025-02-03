@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"GianAntonucci",
 			"Pippinu"
 		]
 	},
@@ -9,6 +10,6 @@
 	"mask-whatlinkshere": "Liami",
 	"mask-refresh": "Aggiurna",
 	"mask-menu-left-label": "Pruggettu",
-	"mask-menu-right-label": "Navigazzioni",
+	"mask-menu-right-label": "Navicazzioni",
 	"mask-index": "Ìnnici"
 }
