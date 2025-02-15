@@ -6,6 +6,7 @@
 		"Jack Phoenix"
 	],
 	"url": "https://www.mediawiki.org/wiki/Skin:Mask",
+	"namemsg": "skinname-mask",
 	"descriptionmsg": "mask-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "skin",

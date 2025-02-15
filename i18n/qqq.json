@@ -18,5 +18,6 @@
 	"mask-menu-left": "{{ignore}}\nProject menu contents; uses only other messages",
 	"mask-menu-right": "{{ignore}}\nNavigation menu contents; uses only other messages",
 	"mask-index": "Label for index/all pages link\n{{Identical|Index}}",
-	"mask-index-url": "{{ignore}}\nTarget page for 'index' link"
+	"mask-index-url": "{{ignore}}\nTarget page for 'index' link",
+	"skinname-mask": "{{name}}"
 }

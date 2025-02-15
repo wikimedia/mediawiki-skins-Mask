@@ -13,5 +13,6 @@
 	"mask-menu-left": "\n* aboutpage|about\n* recentchanges-url|recentchanges",
 	"mask-menu-right": "\n* mask-index-url|mask-index\n* randompage-url|randompage",
 	"mask-index": "Index",
-	"mask-index-url": "Special:AllPages"
+	"mask-index-url": "Special:AllPages",
+	"skinname-mask": "Mask"
 }
