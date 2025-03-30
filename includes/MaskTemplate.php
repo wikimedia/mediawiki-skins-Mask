@@ -212,7 +212,9 @@ class MaskTemplate extends BaseTemplate {
 			if ( $this->getMsg( $line_temp[0] )->isDisabled() ) {
 				$link = $line_temp[0];
 			}
-			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
+
+			$urlProtocols = MediaWikiServices::getInstance()->getUrlUtils()->validProtocols();
+			if ( preg_match( '/^(?:' . $urlProtocols . ')/', $link ) ) {
 				$href = $link;
 			} else {
 				$title = Title::newFromText( $link );
