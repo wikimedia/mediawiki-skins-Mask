@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"mask-whatlinkshere": "تړنې",
 	"mask-refresh": "بياتازه کول",
+	"mask-jump-to-search": "پلټلو ته ورتلل",
 	"mask-menu-left-label": "پروژه",
 	"mask-menu-right-label": "گرځښت",
 	"mask-index": "ليکلړ"
