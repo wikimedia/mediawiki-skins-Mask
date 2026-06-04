@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
-			"Gokalpselamet"
+			"Gokalpselamet",
+			"HakanIST"
 		]
 	},
+	"mask-prefs-talkpage": "[[mw:Skin talk:Mask|{{int:talk}}]]",
 	"mask-desc": "Fragment of Compendium için görünümün maskesini",
 	"mask-whatlinkshere": "Bağlantılar",
 	"mask-refresh": "Yenile",
@@ -12,5 +14,6 @@
 	"mask-jump-to-search": "Arama kısmına atla",
 	"mask-menu-left-label": "Proje",
 	"mask-menu-right-label": "Gezinti",
-	"mask-index": "Dizin"
+	"mask-index": "Dizin",
+	"skinname-mask": "Mask"
 }
