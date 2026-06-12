@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"mask-prefs-talkpage": "[[mw:Skin talk:Mask|{{int:talk}}]]",
+	"mask-desc": "Téma vzhľadu Mask pre Compendium of Fragments",
+	"mask-whatlinkshere": "Odkazy",
+	"mask-refresh": "Obnoviť",
+	"mask-jump-to-navigation": "Skočiť na navigáciu",
+	"mask-jump-to-search": "Skočiť na vyhľadávanie",
+	"mask-menu-left-label": "Projekt",
+	"mask-menu-right-label": "Navigácia",
+	"mask-index": "Index",
+	"skinname-mask": "Mask"
+}
