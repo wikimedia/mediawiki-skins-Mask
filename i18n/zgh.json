@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hakim1bal"
+			"Hakim1bal",
+			"Daoudsfouli"
 		]
 	},
-	"mask-menu-left-label": "ⴰⵙⵏⴼⴰⵕ"
+	"mask-menu-left-label": "ⴰⵙⵏⴼⴰⵕ",
+	"mask-menu-right-label": "ⴰⵙⵙⴰⵔⴰ"
 }
